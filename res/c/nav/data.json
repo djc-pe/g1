@@ -6,11 +6,11 @@
   "g1": "https://g1.djc.pe/",
 
   "icons": {
-    "menu": "/res/s/www/img/menu-white.svg",
-    "logo": "/res/s/www/img/logo.png",
-    "logoMobile": "/res/s/www/img/logo-mobile.png",
-    "search": "/res/s/www/img/search.svg",
-    "user": "/res/s/www/img/user-white.svg"
+    "menu": "https://g1.djc.pe/res/s/www/img/menu-white.svg",
+    "logo": "https://g1.djc.pe/res/s/www/img/logo.png",
+    "logoMobile": "https://g1.djc.pe/res/s/www/img/logo-mobile.png",
+    "search": "https://g1.djc.pe/res/s/www/img/search.svg",
+    "user": "https://g1.djc.pe/res/s/www/img/user-white.svg"
   },
 
   "labels": {
