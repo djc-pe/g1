@@ -25,21 +25,75 @@
   gtag('config', 'G-S0JX351KT2');
 </script>
 
-  <title>DJC G1</title>
-  <meta name="description" content="DJC G1">
+  <title>DJC G1 - Poder es Poder: guía para jugar, ganar y ser el rey del mundo</title>
+  <meta name="description" content="Aprende a jugar DJC G1, el juego multijugador en 3D del navegador: explora un planeta compartido, cava, construye, doma animales, pacta con aldeanos y forma el ejército más fuerte para ser el rey del mundo. Gratis en PC y celular.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DJC G1 - Poder es Poder: guía para jugar y ganar">
+  <meta property="og:description" content="Un planeta compartido, todos contra todos: forma el ejército más fuerte y conviértete en el rey del mundo. Así se juega.">
+  <meta property="og:locale" content="es_PE">
+
+  <!-- Datos para buscadores: el juego y las preguntas frecuentes de esta guía. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "name": "DJC G1 - Poder es Poder",
+        "description": "Juego multijugador en 3D en el navegador: un planeta compartido donde el rey del mundo es quien tiene el ejército más fuerte. Doma animales, pacta con aldeanos, cava y construye.",
+        "genre": ["Multijugador", "Estrategia", "Sandbox", "Acción"],
+        "gamePlatform": ["Navegador web", "PC", "Celular"],
+        "playMode": "MultiPlayer",
+        "inLanguage": "es",
+        "url": "https://g1.djc.pe/",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "¿DJC G1 es gratis?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Sí. Se juega gratis desde el navegador, sin descargar nada ni crear una cuenta."}},
+          {"@type": "Question", "name": "¿Puedo jugar DJC G1 en el celular?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Sí. En el celular juegas con un joystick y botones táctiles, en vertical o en horizontal."}},
+          {"@type": "Question", "name": "¿Cómo se gana en DJC G1?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Quien tiene el ejército con más poder ocupa el primer puesto y es el rey del mundo. El ejército se forma domando animales y pactando con aldeanos."}},
+          {"@type": "Question", "name": "¿Qué pasa con mi ejército si me desconecto?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Se queda en el mundo guardando el sitio. Al volver desde el mismo dispositivo lo recuperas, aunque otros jugadores pueden intentar quitártelo mientras no estás."}}
+        ]
+      }
+    ]
+  }
+  </script>
 
   <link rel="canonical" href="https://g1.djc.pe/es/">
   <link rel="alternate" hreflang="en" href="https://g1.djc.pe/en/">
   <link rel="alternate" hreflang="es" href="https://g1.djc.pe/es/">
   <link rel="alternate" hreflang="zh-cn" href="https://g1.djc.pe/zh-cn/">
 
-  
+  <!-- Estilos de la marca (como example.html): tarjetas con borde amarillo a
+       la izquierda sobre --color-surface, etiqueta en mayúsculas, títulos en
+       --color-accent y texto en --color-text-muted. -->
   <style>
-  /*** play ***/
+  /*** cabecera ***/
+  .djc-g1-title {
+    margin-bottom: 4px;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .djc-g1-lead {
+    max-width: 70ch;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /*** jugar ***/
   .djc-play {
     display: flex;
     justify-content: center;
-    margin: 8px 0 24px;
+    margin: 20px 0 24px;
   }
 
   .djc-play a {
@@ -72,6 +126,71 @@
     height: 18px;
     fill: currentColor;
   }
+
+  /*** tarjetas (secciones de la guía) ***/
+  .djc-g1-card {
+    display: block;
+    margin: 0 0 16px;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 10px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+    scroll-margin-top: 72px;
+  }
+
+  .djc-g1-card .djc-g1-label {
+    margin: 0 0 6px;
+    color: var(--color-accent);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .djc-g1-card h2 {
+    margin: 0 0 8px;
+    color: var(--color-accent);
+    font-size: 20px;
+  }
+
+  .djc-g1-card h3 {
+    margin: 16px 0 6px;
+    color: var(--color-text);
+    font-size: 16px;
+  }
+
+  .djc-g1-card p,
+  .djc-g1-card li {
+    max-width: 70ch;
+    color: var(--color-text-muted);
+    font-size: 14px;
+  }
+
+  .djc-g1-card p {
+    margin: 0 0 10px;
+  }
+
+  .djc-g1-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .djc-g1-card ul,
+  .djc-g1-card ol {
+    margin: 0 0 10px;
+    padding-left: 20px;
+  }
+
+  .djc-g1-card strong {
+    color: var(--color-text);
+  }
+
+  .djc-g1-card .djc-g1-more {
+    margin: 12px 0 0;
+    color: var(--color-accent);
+    font-size: 14px;
+  }
   </style>
 </head>
 <body>
@@ -81,20 +200,261 @@
 
 <br/>
 <!-- Español -->
-  <div class="djc-tab-panel" id="panel-2"
-    role="tabpanel" aria-labelledby="tab-2" lang="es">
+<div class="djc-tab-panel" id="panel-2"
+role="tabpanel" aria-labelledby="tab-2" lang="es">
 
-    <h1>DJC G1</h1>
-    <div class="djc-play">
-      <a href="https://g1play2.djc.pe/">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        Jugar
-      </a>
-    </div>
+<h1 class="djc-g1-title">DJC G1 - Poder es Poder</h1>
+<p class="djc-g1-lead">
+Un planeta entero, muchos jugadores y una sola corona. DJC G1 es un juego multijugador en 3D que
+se juega en el navegador, en la PC o en el celular, sin descargar nada.
+</p>
 
-  </div>
+<div class="djc-play">
+  <a href="https://g1play2.djc.pe/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    Jugar
+  </a>
+</div>
+
+<a class="djc-g1-card" href="#como-ganar">
+  <p class="djc-g1-label">La regla del juego</p>
+  <h2>El rey del mundo es quien tiene el ejército más fuerte</h2>
+  <p>Doma lobos y osos, paga a los aldeanos para que luchen por ti y defiende lo que es tuyo.
+    No hay equipos: todos contra todos, en el mismo planeta.</p>
+  <p class="djc-g1-more">Así se gana →</p>
+</a>
+
+<h2>En esta guía</h2>
+<div class="djc-tutorial-others">
+
+  <a href="#de-que-trata">
+  <h2>¿De qué trata el juego?</h2>
+  <p>Un planeta compartido con montañas, cuevas, animales salvajes y aldeas.</p>
+  </a>
+
+  <a href="#como-empezar">
+  <h2>Cómo empezar</h2>
+  <p>Tus primeros pasos en el mundo, en cuatro pasos sencillos.</p>
+  </a>
+
+  <a href="#controles">
+  <h2>Controles</h2>
+  <p>Cómo moverte, mirar y usar tus herramientas en la PC y en el celular.</p>
+  </a>
+
+  <a href="#herramientas">
+  <h2>Tus herramientas</h2>
+  <p>Golpear, lanzar piedras, construir, domar y pactar.</p>
+  </a>
+
+  <a href="#vida-energia">
+  <h2>Vida, energía y fuerza</h2>
+  <p>Qué significa la barra de arriba y cómo se hace daño.</p>
+  </a>
+
+  <a href="#cavar-construir">
+  <h2>Cavar y construir</h2>
+  <p>Moldea el planeta bloque a bloque y encuentra oro.</p>
+  </a>
+
+  <a href="#ejercito">
+  <h2>Cómo formar tu ejército</h2>
+  <p>Domar animales, pactar con aldeanos y dar órdenes.</p>
+  </a>
+
+  <a href="#como-ganar">
+  <h2>Cómo ganar</h2>
+  <p>El poder, el top de jugadores y la corona del rey.</p>
+  </a>
+
+  <a href="#chat">
+  <h2>El chat</h2>
+  <p>Todo lo que pasa en el mundo, y su historial.</p>
+  </a>
+
+  <a href="#consejos">
+  <h2>Consejos</h2>
+  <p>Ideas para empezar con buen pie.</p>
+  </a>
+
+  <a href="#preguntas">
+  <h2>Preguntas frecuentes</h2>
+  <p>¿Es gratis? ¿Se juega en el celular? ¿Y si me desconecto?</p>
+  </a>
+
+</div>
+
+<br/><br/>
+
+<section class="djc-g1-card" id="de-que-trata">
+  <p class="djc-g1-label">El juego</p>
+  <h2>¿De qué trata el juego?</h2>
+  <p>Apareces en un planeta redondo, con llanuras verdes, montañas que puedes escalar y un subsuelo
+    lleno de tierra, roca y vetas de oro. Por el mundo viven lobos que cazan en manada, osos que
+    defienden su territorio y aldeas con aldeanos dispuestos a luchar… si les pagas bien.</p>
+  <p>No hay equipos: es <strong>todos contra todos</strong>. Tu objetivo es reunir el ejército más
+    poderoso, ya sea domando animales salvajes o pactando con aldeanos, y mantenerlo frente a los
+    demás jugadores. Puedes cavar, construir, explorar, pelear y negociar: tú decides cómo llegar
+    a lo más alto.</p>
+</section>
+
+<section class="djc-g1-card" id="como-empezar">
+  <p class="djc-g1-label">Primeros pasos</p>
+  <h2>Cómo empezar a jugar</h2>
+  <ol>
+    <li><strong>Escribe tu nombre y pulsa 'Entrar'.</strong> No hace falta registrarse.</li>
+    <li><strong>Mira a tu alrededor.</strong> Empiezas en una llanura tranquila, con montañas a la vista.</li>
+    <li><strong>Prueba tus herramientas</strong>: golpea el suelo, recoge material y construye algo.</li>
+    <li><strong>Busca tu primer aliado</strong>: un animal al que domar o una aldea con la que pactar.</li>
+  </ol>
+  <p>El juego recuerda tu dispositivo: cuando vuelvas desde el mismo navegador, serás el mismo
+    jugador y recuperarás tu ejército.</p>
+</section>
+
+<section class="djc-g1-card" id="controles">
+  <p class="djc-g1-label">Controles</p>
+  <h2>Cómo se juega en la PC y en el celular</h2>
+  <h3>En la PC</h3>
+  <ul>
+    <li><strong>W A S D</strong>: andar. <strong>Espacio</strong>: saltar. <strong>Ratón</strong>: mirar.</li>
+    <li><strong>Clic</strong>: usar la herramienta que llevas en la mano (mantén pulsado para repetir).</li>
+    <li><strong>1 a 7</strong> o la <strong>rueda del ratón</strong>: cambiar de herramienta.</li>
+    <li><strong>Q</strong>: tu ejército te sigue o se queda quieto. <strong>E</strong>: tu ejército ataca a lo que apuntas.</li>
+    <li><strong>C</strong>: abrir el chat. <strong>Esc</strong>: soltar el ratón.</li>
+  </ul>
+  <h3>En el celular</h3>
+  <ul>
+    <li>Pon el dedo en la <strong>parte izquierda</strong> de la pantalla y aparecerá un joystick para andar.</li>
+    <li><strong>Arrastra en el resto</strong> de la pantalla para mirar.</li>
+    <li>Botones <strong>Usar</strong>, <strong>Saltar</strong>, <strong>Seguidme/Quedaos</strong> y <strong>Atacar</strong>.</li>
+    <li>Las herramientas están abajo; si no caben, deslízalas de lado (las flechas te avisan de que hay más).</li>
+    <li>Puedes jugar en <strong>vertical o en horizontal</strong>, como te resulte más cómodo.</li>
+  </ul>
+</section>
+
+<section class="djc-g1-card" id="herramientas">
+  <p class="djc-g1-label">Herramientas</p>
+  <h2>Tus herramientas</h2>
+  <ul>
+    <li><strong>Mano</strong>: golpea a quien tengas delante o cava el terreno.</li>
+    <li><strong>Piedra</strong>: lo mismo, pero con más fuerza.</li>
+    <li><strong>Lanzar</strong>: tira piedras a distancia; caen al suelo y puedes volver a recogerlas.</li>
+    <li><strong>Tierra</strong> y <strong>Roca</strong>: construye bloques para levantar muros, escaleras o refugios.</li>
+    <li><strong>Domar</strong>: convierte a un animal debilitado en parte de tu ejército.</li>
+    <li><strong>Pactar</strong>: paga a un aldeano para que luche a tu lado.</li>
+  </ul>
+  <p>Empiezas con algo de tierra y piedras. El <strong>oro</strong> se encuentra cavando hondo, entre
+    la roca, y es la moneda que más valoran los aldeanos.</p>
+</section>
+
+<section class="djc-g1-card" id="vida-energia">
+  <p class="djc-g1-label">Tu personaje</p>
+  <h2>Vida, energía y fuerza</h2>
+  <p>Arriba, en el centro, verás una barra: la mitad izquierda es tu <strong>vida</strong> y la derecha
+    tu <strong>energía</strong>. Cada golpe, cada piedra lanzada y cada animal domado gastan energía,
+    que se recupera sola en unos segundos. La vida también vuelve poco a poco. Si caes, reapareces
+    enseguida, así que no tengas miedo a probar.</p>
+  <p>Cada golpe hace un daño al azar según tu <strong>fuerza</strong> (al empezar, entre 1 y 5), y
+    llevar una piedra en la mano lo aumenta.</p>
+</section>
+
+<section class="djc-g1-card" id="cavar-construir">
+  <p class="djc-g1-label">El planeta</p>
+  <h2>Cavar y construir</h2>
+  <p>El planeta se puede moldear bloque a bloque. La tierra cede en pocos golpes, la roca aguanta
+    bastante más y el oro es lo más duro de todo. Cada bloque que rompes se queda en tu
+    inventario: la tierra te da tierra, y la roca te da piedras.</p>
+  <p>Con ese material puedes construir: escalones para subir a una montaña, un muro para frenar a
+    los lobos o una torre desde la que vigilar a tu ejército. Si cavas un hoyo bajo tus pies, salta
+    para salir.</p>
+</section>
+
+<section class="djc-g1-card" id="ejercito">
+  <p class="djc-g1-label">Tu ejército</p>
+  <h2>Cómo formar tu ejército</h2>
+  <h3>Domar animales</h3>
+  <p>Los <strong>lobos</strong> son rápidos y van en manada; los <strong>osos</strong> son lentos pero
+    muy poderosos. Para domarlos, primero hay que <strong>debilitarlos</strong>: cuando les quede poca
+    vida (menos de un tercio), elige «Domar» y acércate. A partir de ese momento te seguirán y te
+    protegerán.</p>
+  <h3>Pactar con aldeanos</h3>
+  <p>En las aldeas viven aldeanos con distintos oficios. Si les pagas su precio en materiales, se
+    unen a ti:</p>
+  <ul>
+    <li><strong>Guerrero</strong>: resistente y fuerte en el cuerpo a cuerpo. Cuesta 3 de oro y 5 piedras.</li>
+    <li><strong>Arquero</strong>: ataca desde lejos lanzando piedras. Cuesta 2 de oro y 10 piedras.</li>
+    <li><strong>Minero</strong>: más modesto, pero barato. Cuesta 10 de tierra.</li>
+  </ul>
+  <h3>Dar órdenes</h3>
+  <p>Las órdenes son sencillas: que tu ejército te <strong>siga</strong>, que se <strong>quede</strong>
+    guardando un sitio o que <strong>ataque</strong> a lo que apuntas. Un buen jefe sabe cuándo avanzar
+    y cuándo defender.</p>
+</section>
+
+<section class="djc-g1-card" id="como-ganar">
+  <p class="djc-g1-label">Cómo ganar</p>
+  <h2>Ser el rey del mundo</h2>
+  <p>Cada unidad de tu ejército aporta <strong>poder</strong>: un oso vale más que un lobo, y un guerrero
+    más que un minero. Tu poder total es la suma de todo tu ejército, y el cuadro de los
+    <strong>primeros puestos</strong> muestra quién va delante. Quien ocupa el primer lugar es
+    <strong>el rey del mundo</strong> y lleva una corona sobre la cabeza que todos pueden ver.</p>
+  <p>Pero la corona no está asegurada. Cuando te desconectas, tu ejército se queda en el mundo
+    guardando el sitio, y otros jugadores pueden atacarlo, domar a tus animales o convencer a tus
+    aldeanos con un pago mejor. Mantener el poder es tan importante como conseguirlo.</p>
+  <p>En el cuadro del top, el círculo junto a cada nombre funciona como un reloj: lleno si el jugador
+    está conectado, y se va vaciando con las horas que lleva fuera.</p>
+</section>
+
+<section class="djc-g1-card" id="chat">
+  <p class="djc-g1-label">Comunidad</p>
+  <h2>El chat</h2>
+  <p>Arriba a la derecha (o debajo del top en el celular) aparecen los avisos del mundo: quién entra,
+    quién se va, quién derrotó a quién, quién domó o pactó. Con el botón <strong>Chat</strong> puedes
+    abrir el historial y repasar todo lo que ha pasado. También verás ahí, solo para ti, tu fuerza y
+    el estado de tu ejército.</p>
+</section>
+
+<section class="djc-g1-card" id="consejos">
+  <p class="djc-g1-label">Consejos</p>
+  <h2>Consejos para empezar con buen pie</h2>
+  <ul>
+    <li>Antes de enfrentarte a un oso, empieza por un <strong>lobo</strong>: es más fácil de debilitar.</li>
+    <li>Lleva <strong>una piedra en la mano</strong> para pelear y cavar más rápido.</li>
+    <li><strong>Cava hondo</strong> para encontrar oro: es la llave para pactar con guerreros y arqueros.</li>
+    <li>Vigila tu <strong>energía</strong>: si se agota, espera unos segundos antes de seguir golpeando.</li>
+    <li>Usa las <strong>montañas</strong> y lo que construyas para defenderte de las manadas.</li>
+    <li>Cuando tengas un buen ejército, ordénale <strong>quedarse</strong> en un lugar seguro antes de desconectarte.</li>
+  </ul>
+</section>
+
+<section class="djc-g1-card" id="preguntas">
+  <p class="djc-g1-label">Preguntas frecuentes</p>
+  <h2>Preguntas frecuentes</h2>
+  <h3>¿DJC G1 es gratis?</h3>
+  <p>Sí. Se juega gratis desde el navegador, sin descargar nada ni crear una cuenta.</p>
+  <h3>¿Puedo jugar en el celular?</h3>
+  <p>Sí. En el celular juegas con un joystick y botones táctiles, en vertical o en horizontal.</p>
+  <h3>¿Qué pasa con mi ejército si me desconecto?</h3>
+  <p>Se queda en el mundo guardando el sitio. Al volver desde el mismo dispositivo lo recuperas,
+    aunque otros jugadores pueden intentar quitártelo mientras no estás.</p>
+  <h3>¿Puedo jugar con mis amigos?</h3>
+  <p>Sí: todos los jugadores comparten el mismo planeta. Entren a la vez y se encontrarán en el
+    mismo mundo… aunque recuerda que, al final, solo puede haber un rey.</p>
+  <h3>El juego todavía está creciendo</h3>
+  <p>DJC G1 sigue en desarrollo y cada actualización trae novedades. Algunas pueden hacer que el
+    mundo empiece de nuevo, así que aprovecha cada partida.</p>
+</section>
+
+<div class="djc-play">
+  <a href="https://g1play2.djc.pe/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    Empezar a jugar
+  </a>
+</div>
+
+</div>
 
 
-</main>  
+</main>
 </body>
 </html>

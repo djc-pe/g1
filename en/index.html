@@ -25,21 +25,75 @@
   gtag('config', 'G-S0JX351KT2');
 </script>
 
-  <title>DJC G1</title>
-  <meta name="description" content="DJC G1">
+  <title>DJC G1 - Power Is Power: a guide to play, win and become king of the world</title>
+  <meta name="description" content="Learn to play DJC G1, the 3D multiplayer browser game: explore a shared planet, dig, build, tame animals, strike deals with villagers and raise the strongest army to become king of the world. Free on PC and mobile.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DJC G1 - Power Is Power: a guide to play and win">
+  <meta property="og:description" content="One shared planet, everyone against everyone: raise the strongest army and become king of the world. Here's how to play.">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Datos para buscadores: el juego y las preguntas frecuentes de esta guía. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "name": "DJC G1 - Power Is Power",
+        "description": "3D multiplayer browser game: a shared planet where the king of the world is whoever has the strongest army. Tame animals, strike deals with villagers, dig and build.",
+        "genre": ["Multiplayer", "Strategy", "Sandbox", "Action"],
+        "gamePlatform": ["Web browser", "PC", "Mobile"],
+        "playMode": "MultiPlayer",
+        "inLanguage": "es",
+        "url": "https://g1.djc.pe/",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Is DJC G1 free?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Yes. You play it for free in your browser, with nothing to download and no account to create."}},
+          {"@type": "Question", "name": "Can I play DJC G1 on my phone?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Yes. On mobile you play with a joystick and touch buttons, in portrait or landscape."}},
+          {"@type": "Question", "name": "How do you win in DJC G1?",
+           "acceptedAnswer": {"@type": "Answer", "text": "Whoever has the most powerful army takes first place and is the king of the world. You build your army by taming animals and striking deals with villagers."}},
+          {"@type": "Question", "name": "What happens to my army if I log off?",
+           "acceptedAnswer": {"@type": "Answer", "text": "It stays in the world guarding its spot. When you come back from the same device you get it back, although other players may try to take it from you while you're away."}}
+        ]
+      }
+    ]
+  }
+  </script>
 
   <link rel="canonical" href="https://g1.djc.pe/en/">
   <link rel="alternate" hreflang="en" href="https://g1.djc.pe/en/">
   <link rel="alternate" hreflang="es" href="https://g1.djc.pe/es/">
   <link rel="alternate" hreflang="zh-cn" href="https://g1.djc.pe/zh-cn/">
 
-  
+  <!-- Estilos de la marca (como example.html): tarjetas con borde amarillo a
+       la izquierda sobre --color-surface, etiqueta en mayúsculas, títulos en
+       --color-accent y texto en --color-text-muted. -->
   <style>
-  /*** play ***/
+  /*** cabecera ***/
+  .djc-g1-title {
+    margin-bottom: 4px;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .djc-g1-lead {
+    max-width: 70ch;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /*** jugar ***/
   .djc-play {
     display: flex;
     justify-content: center;
-    margin: 8px 0 24px;
+    margin: 20px 0 24px;
   }
 
   .djc-play a {
@@ -72,6 +126,71 @@
     height: 18px;
     fill: currentColor;
   }
+
+  /*** tarjetas (secciones de la guía) ***/
+  .djc-g1-card {
+    display: block;
+    margin: 0 0 16px;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 10px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+    scroll-margin-top: 72px;
+  }
+
+  .djc-g1-card .djc-g1-label {
+    margin: 0 0 6px;
+    color: var(--color-accent);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .djc-g1-card h2 {
+    margin: 0 0 8px;
+    color: var(--color-accent);
+    font-size: 20px;
+  }
+
+  .djc-g1-card h3 {
+    margin: 16px 0 6px;
+    color: var(--color-text);
+    font-size: 16px;
+  }
+
+  .djc-g1-card p,
+  .djc-g1-card li {
+    max-width: 70ch;
+    color: var(--color-text-muted);
+    font-size: 14px;
+  }
+
+  .djc-g1-card p {
+    margin: 0 0 10px;
+  }
+
+  .djc-g1-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .djc-g1-card ul,
+  .djc-g1-card ol {
+    margin: 0 0 10px;
+    padding-left: 20px;
+  }
+
+  .djc-g1-card strong {
+    color: var(--color-text);
+  }
+
+  .djc-g1-card .djc-g1-more {
+    margin: 12px 0 0;
+    color: var(--color-accent);
+    font-size: 14px;
+  }
   </style>
 </head>
 <body>
@@ -81,20 +200,261 @@
 
 <br/>
 <!-- English -->
-  <div class="djc-tab-panel" id="panel-1"
-    role="tabpanel" aria-labelledby="tab-1" lang="en">
+<div class="djc-tab-panel" id="panel-1"
+role="tabpanel" aria-labelledby="tab-1" lang="en">
 
-    <h1>DJC G1</h1>
-    <div class="djc-play">
-      <a href="https://g1play2.djc.pe/">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        Play
-      </a>
-    </div>
+<h1 class="djc-g1-title">DJC G1 - Power Is Power</h1>
+<p class="djc-g1-lead">
+One whole planet, many players and a single crown. DJC G1 is a 3D multiplayer game you play
+in your browser, on PC or on your phone, with nothing to download.
+</p>
 
-  </div>
+<div class="djc-play">
+  <a href="https://g1play2.djc.pe/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    Play
+  </a>
+</div>
 
+<a class="djc-g1-card" href="#how-to-win">
+  <p class="djc-g1-label">The rule of the game</p>
+  <h2>The king of the world is whoever has the strongest army</h2>
+  <p>Tame wolves and bears, pay villagers to fight for you and defend what's yours.
+    There are no teams: everyone against everyone, on the same planet.</p>
+  <p class="djc-g1-more">How to win →</p>
+</a>
 
-</main>  
+<h2>In this guide</h2>
+<div class="djc-tutorial-others">
+
+  <a href="#what-is-it">
+  <h2>What is the game about?</h2>
+  <p>A shared planet with mountains, caves, wild animals and villages.</p>
+  </a>
+
+  <a href="#getting-started">
+  <h2>Getting started</h2>
+  <p>Your first moves in the world, in four simple steps.</p>
+  </a>
+
+  <a href="#controls">
+  <h2>Controls</h2>
+  <p>How to move, look around and use your tools on PC and mobile.</p>
+  </a>
+
+  <a href="#tools">
+  <h2>Your tools</h2>
+  <p>Hit, throw stones, build, tame and strike deals.</p>
+  </a>
+
+  <a href="#health-energy">
+  <h2>Health, energy and strength</h2>
+  <p>What the bar at the top means and how damage works.</p>
+  </a>
+
+  <a href="#dig-build">
+  <h2>Digging and building</h2>
+  <p>Shape the planet block by block and find gold.</p>
+  </a>
+
+  <a href="#army">
+  <h2>How to build your army</h2>
+  <p>Tame animals, strike deals with villagers and give orders.</p>
+  </a>
+
+  <a href="#how-to-win">
+  <h2>How to win</h2>
+  <p>Power, the player ranking and the king's crown.</p>
+  </a>
+
+  <a href="#chat">
+  <h2>The chat</h2>
+  <p>Everything that happens in the world, and its history.</p>
+  </a>
+
+  <a href="#tips">
+  <h2>Tips</h2>
+  <p>Ideas to get off to a good start.</p>
+  </a>
+
+  <a href="#faq">
+  <h2>FAQ</h2>
+  <p>Is it free? Can I play on my phone? What if I log off?</p>
+  </a>
+
+</div>
+
+<br/><br/>
+
+<section class="djc-g1-card" id="what-is-it">
+  <p class="djc-g1-label">The game</p>
+  <h2>What is the game about?</h2>
+  <p>You appear on a round planet with green plains, mountains you can climb and an underground
+    full of dirt, rock and veins of gold. The world is home to wolves that hunt in packs, bears
+    that defend their territory and villages with villagers ready to fight… if you pay them well.</p>
+  <p>There are no teams: it's <strong>everyone against everyone</strong>. Your goal is to gather the
+    most powerful army, whether by taming wild animals or striking deals with villagers, and hold
+    on to it against the other players. You can dig, build, explore, fight and negotiate: you
+    decide how to reach the top.</p>
+  <p>The game's interface is in Spanish; in this guide each button's on-screen name appears in
+    parentheses so you can recognize it.</p>
+</section>
+
+<section class="djc-g1-card" id="getting-started">
+  <p class="djc-g1-label">First steps</p>
+  <h2>How to start playing</h2>
+  <ol>
+    <li><strong>Type your name and press <em>Entrar</em> (Enter).</strong> No sign-up needed.</li>
+    <li><strong>Look around.</strong> You start on a quiet plain, with mountains in sight.</li>
+    <li><strong>Try your tools</strong>: hit the ground, collect material and build something.</li>
+    <li><strong>Find your first ally</strong>: an animal to tame or a village to strike a deal with.</li>
+  </ol>
+  <p>The game remembers your device: when you come back from the same browser, you'll be the same
+    player and get your army back.</p>
+</section>
+
+<section class="djc-g1-card" id="controls">
+  <p class="djc-g1-label">Controls</p>
+  <h2>How to play on PC and mobile</h2>
+  <h3>On PC</h3>
+  <ul>
+    <li><strong>W A S D</strong>: walk. <strong>Space</strong>: jump. <strong>Mouse</strong>: look around.</li>
+    <li><strong>Click</strong>: use the tool in your hand (hold to repeat).</li>
+    <li><strong>1 to 7</strong> or the <strong>mouse wheel</strong>: switch tools.</li>
+    <li><strong>Q</strong>: your army follows you or stays put. <strong>E</strong>: your army attacks what you're aiming at.</li>
+    <li><strong>C</strong>: open the chat. <strong>Esc</strong>: release the mouse.</li>
+  </ul>
+  <h3>On mobile</h3>
+  <ul>
+    <li>Put your finger on the <strong>left side</strong> of the screen and a joystick will appear for walking.</li>
+    <li><strong>Drag anywhere else</strong> on the screen to look around.</li>
+    <li>Buttons <strong>Use</strong> (<em>Usar</em>), <strong>Jump</strong> (<em>Saltar</em>), <strong>Follow me/Stay</strong> (<em>Seguidme/Quedaos</em>) and <strong>Attack</strong> (<em>Atacar</em>).</li>
+    <li>The tools are at the bottom; if they don't fit, swipe them sideways (the arrows let you know there are more).</li>
+    <li>You can play in <strong>portrait or landscape</strong>, whichever feels more comfortable.</li>
+  </ul>
+</section>
+
+<section class="djc-g1-card" id="tools">
+  <p class="djc-g1-label">Tools</p>
+  <h2>Your tools</h2>
+  <ul>
+    <li><strong>Hand</strong> (<em>Mano</em>): hit whoever is in front of you or dig the ground.</li>
+    <li><strong>Stone</strong> (<em>Piedra</em>): the same, but with more strength.</li>
+    <li><strong>Throw</strong> (<em>Lanzar</em>): throw stones at a distance; they fall to the ground and you can pick them up again.</li>
+    <li><strong>Dirt</strong> (<em>Tierra</em>) and <strong>Rock</strong> (<em>Roca</em>): place blocks to raise walls, stairs or shelters.</li>
+    <li><strong>Tame</strong> (<em>Domar</em>): turn a weakened animal into part of your army.</li>
+    <li><strong>Deal</strong> (<em>Pactar</em>): pay a villager to fight by your side.</li>
+  </ul>
+  <p>You start with some dirt and stones. <strong>Gold</strong> is found by digging deep, among the
+    rock, and it's the currency villagers value most.</p>
+</section>
+
+<section class="djc-g1-card" id="health-energy">
+  <p class="djc-g1-label">Your character</p>
+  <h2>Health, energy and strength</h2>
+  <p>At the top center you'll see a bar: the left half is your <strong>health</strong> and the right
+    half your <strong>energy</strong>. Every hit, every stone thrown and every animal tamed costs energy,
+    which recovers on its own in a few seconds. Health also comes back little by little. If you fall,
+    you respawn right away, so don't be afraid to experiment.</p>
+  <p>Each hit deals random damage based on your <strong>strength</strong> (between 1 and 5 at the
+    start), and holding a stone in your hand increases it.</p>
+</section>
+
+<section class="djc-g1-card" id="dig-build">
+  <p class="djc-g1-label">The planet</p>
+  <h2>Digging and building</h2>
+  <p>The planet can be shaped block by block. Dirt gives way in a few hits, rock holds out much
+    longer and gold is the hardest of all. Every block you break goes into your inventory: dirt
+    gives you dirt, and rock gives you stones.</p>
+  <p>With that material you can build: steps to climb a mountain, a wall to hold off the wolves or
+    a tower from which to watch over your army. If you dig a hole under your feet, jump to get out.</p>
+</section>
+
+<section class="djc-g1-card" id="army">
+  <p class="djc-g1-label">Your army</p>
+  <h2>How to build your army</h2>
+  <h3>Taming animals</h3>
+  <p><strong>Wolves</strong> are fast and travel in packs; <strong>bears</strong> are slow but very
+    powerful. To tame them, you first have to <strong>weaken them</strong>: when they have little
+    health left (less than a third), choose <em>Domar</em> (Tame) and get close. From then on they'll
+    follow and protect you.</p>
+  <h3>Striking deals with villagers</h3>
+  <p>Villages are home to villagers with different trades. If you pay their price in materials,
+    they join you:</p>
+  <ul>
+    <li><strong>Warrior</strong>: tough and strong in close combat. Costs 3 gold and 5 stones.</li>
+    <li><strong>Archer</strong>: attacks from afar by throwing stones. Costs 2 gold and 10 stones.</li>
+    <li><strong>Miner</strong>: more modest, but cheap. Costs 10 dirt.</li>
+  </ul>
+  <h3>Giving orders</h3>
+  <p>Orders are simple: have your army <strong>follow</strong> you, <strong>stay</strong> guarding a
+    spot or <strong>attack</strong> whatever you're aiming at. A good leader knows when to advance
+    and when to defend.</p>
+</section>
+
+<section class="djc-g1-card" id="how-to-win">
+  <p class="djc-g1-label">How to win</p>
+  <h2>Becoming king of the world</h2>
+  <p>Every unit in your army adds <strong>power</strong>: a bear is worth more than a wolf, and a
+    warrior more than a miner. Your total power is the sum of your whole army, and the
+    <strong>top players</strong> board shows who's ahead. Whoever holds first place is
+    <strong>the king of the world</strong> and wears a crown over their head for everyone to see.</p>
+  <p>But the crown isn't guaranteed. When you log off, your army stays in the world guarding its
+    spot, and other players can attack it, tame your animals or win over your villagers with a
+    better offer. Keeping power is as important as getting it.</p>
+  <p>On the top board, the circle next to each name works like a clock: full if the player is
+    online, and it empties with the hours they've been away.</p>
+</section>
+
+<section class="djc-g1-card" id="chat">
+  <p class="djc-g1-label">Community</p>
+  <h2>The chat</h2>
+  <p>At the top right (or below the top board on mobile) you'll see world notices: who joins,
+    who leaves, who defeated whom, who tamed or struck a deal. With the <strong>Chat</strong> button
+    you can open the history and review everything that has happened. You'll also see there, just
+    for you, your strength and the state of your army.</p>
+</section>
+
+<section class="djc-g1-card" id="tips">
+  <p class="djc-g1-label">Tips</p>
+  <h2>Tips to get off to a good start</h2>
+  <ul>
+    <li>Before taking on a bear, start with a <strong>wolf</strong>: it's easier to weaken.</li>
+    <li>Hold <strong>a stone in your hand</strong> to fight and dig faster.</li>
+    <li><strong>Dig deep</strong> to find gold: it's the key to striking deals with warriors and archers.</li>
+    <li>Watch your <strong>energy</strong>: if it runs out, wait a few seconds before hitting again.</li>
+    <li>Use the <strong>mountains</strong> and what you build to defend yourself from the packs.</li>
+    <li>Once you have a good army, order it to <strong>stay</strong> somewhere safe before logging off.</li>
+  </ul>
+</section>
+
+<section class="djc-g1-card" id="faq">
+  <p class="djc-g1-label">FAQ</p>
+  <h2>Frequently asked questions</h2>
+  <h3>Is DJC G1 free?</h3>
+  <p>Yes. You play it for free in your browser, with nothing to download and no account to create.</p>
+  <h3>Can I play on my phone?</h3>
+  <p>Yes. On mobile you play with a joystick and touch buttons, in portrait or landscape.</p>
+  <h3>What happens to my army if I log off?</h3>
+  <p>It stays in the world guarding its spot. When you come back from the same device you get it
+    back, although other players may try to take it from you while you're away.</p>
+  <h3>Can I play with my friends?</h3>
+  <p>Yes: all players share the same planet. Join at the same time and you'll meet in the same
+    world… just remember that, in the end, there can only be one king.</p>
+  <h3>The game is still growing</h3>
+  <p>DJC G1 is still in development and every update brings something new. Some updates may
+    restart the world, so make the most of every match.</p>
+</section>
+
+<div class="djc-play">
+  <a href="https://g1play2.djc.pe/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    Start playing
+  </a>
+</div>
+
+</div>
+
+</main>
 </body>
 </html>
