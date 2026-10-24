@@ -25,21 +25,75 @@
   gtag('config', 'G-S0JX351KT2');
 </script>
 
-  <title>DJC G1</title>
-  <meta name="description" content="DJC G1">
+  <title>DJC G1 - 实力为王：玩法、取胜与称霸世界指南</title>
+  <meta name="description" content="学习如何玩 DJC G1——一款在浏览器中运行的 3D 多人游戏：探索共享的星球，挖掘、建造、驯服动物、与村民结盟，组建最强大的军队，成为世界之王。PC 和手机均可免费游玩。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DJC G1 - 实力为王：玩法与取胜指南">
+  <meta property="og:description" content="一个共享的星球，所有人互相对抗：组建最强大的军队，成为世界之王。玩法在这里。">
+  <meta property="og:locale" content="zh_CN">
+
+  <!-- Datos para buscadores: el juego y las preguntas frecuentes de esta guía. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "name": "DJC G1 - 实力为王",
+        "description": "在浏览器中运行的 3D 多人游戏：在一个共享的星球上，拥有最强军队的人就是世界之王。驯服动物、与村民结盟、挖掘和建造。",
+        "genre": ["多人", "策略", "沙盒", "动作"],
+        "gamePlatform": ["网页浏览器", "PC", "手机"],
+        "playMode": "MultiPlayer",
+        "inLanguage": "es",
+        "url": "https://g1.djc.pe/",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "DJC G1 免费吗？",
+           "acceptedAnswer": {"@type": "Answer", "text": "是的。直接在浏览器中免费游玩，无需下载，也无需注册账号。"}},
+          {"@type": "Question", "name": "可以用手机玩 DJC G1 吗？",
+           "acceptedAnswer": {"@type": "Answer", "text": "可以。在手机上使用虚拟摇杆和触屏按钮操作，竖屏或横屏都可以。"}},
+          {"@type": "Question", "name": "DJC G1 怎样才算获胜？",
+           "acceptedAnswer": {"@type": "Answer", "text": "军队实力最强的玩家位居第一，就是世界之王。通过驯服动物和与村民结盟来组建军队。"}},
+          {"@type": "Question", "name": "我下线后，我的军队会怎样？",
+           "acceptedAnswer": {"@type": "Answer", "text": "军队会留在世界中守卫原地。用同一台设备回来时就能找回它，不过在你离开期间，其他玩家可能会试图把它抢走。"}}
+        ]
+      }
+    ]
+  }
+  </script>
 
   <link rel="canonical" href="https://g1.djc.pe/zh-cn/">
   <link rel="alternate" hreflang="en" href="https://g1.djc.pe/en/">
   <link rel="alternate" hreflang="es" href="https://g1.djc.pe/es/">
   <link rel="alternate" hreflang="zh-cn" href="https://g1.djc.pe/zh-cn/">
 
-  
+  <!-- Estilos de la marca (como example.html): tarjetas con borde amarillo a
+       la izquierda sobre --color-surface, etiqueta en mayúsculas, títulos en
+       --color-accent y texto en --color-text-muted. -->
   <style>
-  /*** play ***/
+  /*** cabecera ***/
+  .djc-g1-title {
+    margin-bottom: 4px;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .djc-g1-lead {
+    max-width: 70ch;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /*** jugar ***/
   .djc-play {
     display: flex;
     justify-content: center;
-    margin: 8px 0 24px;
+    margin: 20px 0 24px;
   }
 
   .djc-play a {
@@ -72,6 +126,71 @@
     height: 18px;
     fill: currentColor;
   }
+
+  /*** tarjetas (secciones de la guía) ***/
+  .djc-g1-card {
+    display: block;
+    margin: 0 0 16px;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 10px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+    scroll-margin-top: 72px;
+  }
+
+  .djc-g1-card .djc-g1-label {
+    margin: 0 0 6px;
+    color: var(--color-accent);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .djc-g1-card h2 {
+    margin: 0 0 8px;
+    color: var(--color-accent);
+    font-size: 20px;
+  }
+
+  .djc-g1-card h3 {
+    margin: 16px 0 6px;
+    color: var(--color-text);
+    font-size: 16px;
+  }
+
+  .djc-g1-card p,
+  .djc-g1-card li {
+    max-width: 70ch;
+    color: var(--color-text-muted);
+    font-size: 14px;
+  }
+
+  .djc-g1-card p {
+    margin: 0 0 10px;
+  }
+
+  .djc-g1-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .djc-g1-card ul,
+  .djc-g1-card ol {
+    margin: 0 0 10px;
+    padding-left: 20px;
+  }
+
+  .djc-g1-card strong {
+    color: var(--color-text);
+  }
+
+  .djc-g1-card .djc-g1-more {
+    margin: 12px 0 0;
+    color: var(--color-accent);
+    font-size: 14px;
+  }
   </style>
 </head>
 <body>
@@ -81,20 +200,248 @@
 
 <br/>
 <!-- 简体中文 -->
-  <div class="djc-tab-panel" id="panel-3"
-    role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
+<div class="djc-tab-panel" id="panel-3"
+role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
 
-    <h1>DJC G1</h1>
-    <div class="djc-play">
-      <a href="https://g1play2.djc.pe/">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        开始游戏
-      </a>
-    </div>
+<h1 class="djc-g1-title">DJC G1 - 实力为王</h1>
+<p class="djc-g1-lead">
+一整个星球，众多玩家，却只有一顶王冠。DJC G1 是一款 3D 多人游戏，
+在浏览器中即可游玩，PC 和手机都支持，无需下载。
+</p>
 
-  </div>
+<div class="djc-play">
+  <a href="https://g1play2.djc.pe/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    开始游戏
+  </a>
+</div>
 
+<a class="djc-g1-card" href="#how-to-win">
+  <p class="djc-g1-label">游戏规则</p>
+  <h2>拥有最强军队的人，就是世界之王</h2>
+  <p>驯服狼和熊，付钱让村民为你而战，守住属于你的一切。
+    没有队伍之分：在同一个星球上，所有人互相对抗。</p>
+  <p class="djc-g1-more">如何获胜 →</p>
+</a>
 
-</main>  
+<h2>本指南内容</h2>
+<div class="djc-tutorial-others">
+
+  <a href="#what-is-it">
+  <h2>这是一款什么样的游戏？</h2>
+  <p>一个共享的星球，有高山、洞穴、野生动物和村庄。</p>
+  </a>
+
+  <a href="#getting-started">
+  <h2>如何开始</h2>
+  <p>四个简单步骤，迈出你在这个世界的第一步。</p>
+  </a>
+
+  <a href="#controls">
+  <h2>操作方式</h2>
+  <p>在 PC 和手机上如何移动、观察和使用工具。</p>
+  </a>
+
+  <a href="#tools">
+  <h2>你的工具</h2>
+  <p>攻击、投掷石块、建造、驯服和结盟。</p>
+  </a>
+
+  <a href="#health-energy">
+  <h2>生命、体力与力量</h2>
+  <p>顶部状态条的含义，以及伤害是如何计算的。</p>
+  </a>
+
+  <a href="#dig-build">
+  <h2>挖掘与建造</h2>
+  <p>一块一块地改造星球，并找到金矿。</p>
+  </a>
+
+  <a href="#army">
+  <h2>如何组建军队</h2>
+  <p>驯服动物、与村民结盟并下达命令。</p>
+  </a>
+
+  <a href="#how-to-win">
+  <h2>如何获胜</h2>
+  <p>实力、玩家排行榜和国王的王冠。</p>
+  </a>
+
+  <a href="#chat">
+  <h2>聊天</h2>
+  <p>世界中发生的一切，以及历史记录。</p>
+  </a>
+
+  <a href="#tips">
+  <h2>小贴士</h2>
+  <p>帮你开个好头的建议。</p>
+  </a>
+
+  <a href="#faq">
+  <h2>常见问题</h2>
+  <p>免费吗？能用手机玩吗？下线了会怎样？</p>
+  </a>
+
+</div>
+
+<br/><br/>
+
+<section class="djc-g1-card" id="what-is-it">
+  <p class="djc-g1-label">游戏介绍</p>
+  <h2>这是一款什么样的游戏？</h2>
+  <p>你会出现在一个圆形的星球上，这里有绿色的平原、可以攀登的高山，地下则布满泥土、岩石和金矿脉。
+    这个世界里生活着成群狩猎的狼、守护领地的熊，还有村庄里的村民——只要你给的报酬够好，他们就愿意为你而战。</p>
+  <p>没有队伍之分：这是一场<strong>所有人对抗所有人</strong>的较量。你的目标是组建最强大的军队，
+    无论是驯服野生动物还是与村民结盟，并在其他玩家面前守住它。你可以挖掘、建造、探索、战斗和谈判：
+    如何登上顶峰，由你决定。</p>
+  <p>游戏界面目前为西班牙语；本指南会在括号中注明每个按钮在屏幕上显示的名称，方便你辨认。</p>
+</section>
+
+<section class="djc-g1-card" id="getting-started">
+  <p class="djc-g1-label">第一步</p>
+  <h2>如何开始游戏</h2>
+  <ol>
+    <li><strong>输入你的名字，然后点击“进入”（<em>Entrar</em>）。</strong>无需注册。</li>
+    <li><strong>环顾四周。</strong>你会出生在一片宁静的平原上，远处可以看到高山。</li>
+    <li><strong>试试你的工具</strong>：敲击地面、收集材料，然后建造点什么。</li>
+    <li><strong>寻找你的第一个盟友</strong>：一只可以驯服的动物，或一个可以结盟的村庄。</li>
+  </ol>
+  <p>游戏会记住你的设备：当你用同一个浏览器回来时，你还是同一个玩家，并能找回你的军队。</p>
+</section>
+
+<section class="djc-g1-card" id="controls">
+  <p class="djc-g1-label">操作方式</p>
+  <h2>在 PC 和手机上怎么玩</h2>
+  <h3>PC 端</h3>
+  <ul>
+    <li><strong>W A S D</strong>：移动。<strong>空格键</strong>：跳跃。<strong>鼠标</strong>：观察四周。</li>
+    <li><strong>点击</strong>：使用手中的工具（按住可连续使用）。</li>
+    <li><strong>1 到 7</strong> 或<strong>鼠标滚轮</strong>：切换工具。</li>
+    <li><strong>Q</strong>：让军队跟随你或原地待命。<strong>E</strong>：让军队攻击你瞄准的目标。</li>
+    <li><strong>C</strong>：打开聊天。<strong>Esc</strong>：释放鼠标。</li>
+  </ul>
+  <h3>手机端</h3>
+  <ul>
+    <li>将手指放在屏幕<strong>左侧</strong>，就会出现一个用于移动的摇杆。</li>
+    <li>在屏幕<strong>其他区域拖动</strong>即可观察四周。</li>
+    <li>按钮包括<strong>使用</strong>（<em>Usar</em>）、<strong>跳跃</strong>（<em>Saltar</em>）、<strong>跟随/待命</strong>（<em>Seguidme/Quedaos</em>）和<strong>攻击</strong>（<em>Atacar</em>）。</li>
+    <li>工具位于屏幕底部；如果放不下，可以左右滑动（箭头会提示还有更多工具）。</li>
+    <li>可以<strong>竖屏或横屏</strong>游玩，怎么舒服怎么来。</li>
+  </ul>
+</section>
+
+<section class="djc-g1-card" id="tools">
+  <p class="djc-g1-label">工具</p>
+  <h2>你的工具</h2>
+  <ul>
+    <li><strong>手</strong>（<em>Mano</em>）：攻击面前的目标，或挖掘地面。</li>
+    <li><strong>石头</strong>（<em>Piedra</em>）：作用相同，但力量更大。</li>
+    <li><strong>投掷</strong>（<em>Lanzar</em>）：远距离投掷石块；石块会落在地上，你可以再捡回来。</li>
+    <li><strong>泥土</strong>（<em>Tierra</em>）和<strong>岩石</strong>（<em>Roca</em>）：放置方块，搭建墙壁、阶梯或庇护所。</li>
+    <li><strong>驯服</strong>（<em>Domar</em>）：把一只虚弱的动物变成你军队的一员。</li>
+    <li><strong>结盟</strong>（<em>Pactar</em>）：付钱让村民站在你这边作战。</li>
+  </ul>
+  <p>开局时你会有一些泥土和石头。<strong>黄金</strong>要往深处挖，在岩石之间才能找到，
+    它是村民最看重的货币。</p>
+</section>
+
+<section class="djc-g1-card" id="health-energy">
+  <p class="djc-g1-label">你的角色</p>
+  <h2>生命、体力与力量</h2>
+  <p>在屏幕顶部中央，你会看到一条状态条：左半部分是你的<strong>生命</strong>，右半部分是你的<strong>体力</strong>。
+    每一次攻击、每一块投出的石头、每驯服一只动物都会消耗体力，体力会在几秒内自动恢复。
+    生命也会慢慢回复。即使倒下，你也会立刻重生，所以尽管大胆尝试。</p>
+  <p>每次攻击造成的伤害是随机的，取决于你的<strong>力量</strong>（开局时在 1 到 5 之间），
+    手里拿着石头还能提高伤害。</p>
+</section>
+
+<section class="djc-g1-card" id="dig-build">
+  <p class="djc-g1-label">星球</p>
+  <h2>挖掘与建造</h2>
+  <p>这个星球可以一块一块地改造。泥土敲几下就会松动，岩石要耐打得多，而黄金是最坚硬的。
+    你打碎的每一个方块都会进入你的背包：泥土给你泥土，岩石给你石头。</p>
+  <p>用这些材料你可以建造：登山用的台阶、挡住狼群的城墙，或是一座用来守望军队的高塔。
+    如果你在脚下挖了个坑，跳一下就能出来。</p>
+</section>
+
+<section class="djc-g1-card" id="army">
+  <p class="djc-g1-label">你的军队</p>
+  <h2>如何组建军队</h2>
+  <h3>驯服动物</h3>
+  <p><strong>狼</strong>速度快，成群行动；<strong>熊</strong>行动缓慢，但非常强大。
+    要驯服它们，首先得<strong>削弱它们</strong>：当它们的生命所剩不多（不到三分之一）时，
+    选择“驯服”（<em>Domar</em>）并靠近它们。从那一刻起，它们就会跟随并保护你。</p>
+  <h3>与村民结盟</h3>
+  <p>村庄里住着从事不同职业的村民。只要用材料支付他们的价码，他们就会加入你：</p>
+  <ul>
+    <li><strong>战士</strong>：耐打，近战能力强。需要 3 个黄金和 5 块石头。</li>
+    <li><strong>弓箭手</strong>：通过投掷石块远程攻击。需要 2 个黄金和 10 块石头。</li>
+    <li><strong>矿工</strong>：实力一般，但价格便宜。需要 10 块泥土。</li>
+  </ul>
+  <h3>下达命令</h3>
+  <p>命令很简单：让你的军队<strong>跟随</strong>你、<strong>待命</strong>守住某个地点，
+    或<strong>攻击</strong>你瞄准的目标。好的首领知道什么时候该进攻，什么时候该防守。</p>
+</section>
+
+<section class="djc-g1-card" id="how-to-win">
+  <p class="djc-g1-label">如何获胜</p>
+  <h2>成为世界之王</h2>
+  <p>军队中的每个单位都会贡献<strong>实力</strong>：熊比狼更有价值，战士比矿工更有价值。
+    你的总实力是整支军队的总和，<strong>排行榜</strong>会显示谁领先。位居第一的玩家就是
+    <strong>世界之王</strong>，头顶会戴着一顶所有人都能看到的王冠。</p>
+  <p>但王冠并非稳如泰山。当你下线时，你的军队会留在世界中守卫原地，其他玩家可以攻击它、
+    驯服你的动物，或者开出更好的价码说服你的村民倒戈。守住实力和获得实力同样重要。</p>
+  <p>在排行榜上，每个名字旁边的圆圈就像一个时钟：玩家在线时是满的，离线时间越长，圆圈就越空。</p>
+</section>
+
+<section class="djc-g1-card" id="chat">
+  <p class="djc-g1-label">社区</p>
+  <h2>聊天</h2>
+  <p>屏幕右上方（手机上则在排行榜下方）会显示世界中的动态：谁进入了、谁离开了、谁打败了谁、
+    谁驯服了动物或结成了盟约。点击 <strong>Chat</strong> 按钮可以打开历史记录，回顾发生过的一切。
+    在那里你还能看到只有你自己可见的力量值和军队状态。</p>
+</section>
+
+<section class="djc-g1-card" id="tips">
+  <p class="djc-g1-label">小贴士</p>
+  <h2>帮你开个好头的小贴士</h2>
+  <ul>
+    <li>在挑战熊之前，先从<strong>狼</strong>开始：它更容易被削弱。</li>
+    <li><strong>手里拿一块石头</strong>，战斗和挖掘都会更快。</li>
+    <li><strong>往深处挖</strong>寻找黄金：它是与战士和弓箭手结盟的关键。</li>
+    <li>留意你的<strong>体力</strong>：如果耗尽了，先等几秒再继续攻击。</li>
+    <li>利用<strong>高山</strong>和你建造的建筑来抵御狼群。</li>
+    <li>当你拥有一支不错的军队后，下线前让它在安全的地方<strong>待命</strong>。</li>
+  </ul>
+</section>
+
+<section class="djc-g1-card" id="faq">
+  <p class="djc-g1-label">常见问题</p>
+  <h2>常见问题</h2>
+  <h3>DJC G1 免费吗？</h3>
+  <p>是的。直接在浏览器中免费游玩，无需下载，也无需注册账号。</p>
+  <h3>可以用手机玩吗？</h3>
+  <p>可以。在手机上使用虚拟摇杆和触屏按钮操作，竖屏或横屏都可以。</p>
+  <h3>我下线后，我的军队会怎样？</h3>
+  <p>军队会留在世界中守卫原地。用同一台设备回来时就能找回它，
+    不过在你离开期间，其他玩家可能会试图把它抢走。</p>
+  <h3>可以和朋友一起玩吗？</h3>
+  <p>可以：所有玩家共享同一个星球。同时进入游戏，你们就会在同一个世界里相遇……
+    不过别忘了，最终只能有一位国王。</p>
+  <h3>游戏仍在成长中</h3>
+  <p>DJC G1 仍在开发中，每次更新都会带来新内容。有些更新可能会让世界重新开始，
+    所以请珍惜每一局游戏。</p>
+</section>
+
+<div class="djc-play">
+  <a href="https://g1play2.djc.pe/">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+    立即开始游戏
+  </a>
+</div>
+
+</div>
+
+</main>
 </body>
 </html>
