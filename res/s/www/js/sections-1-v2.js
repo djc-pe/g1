@@ -1,19 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const probability = 0.5;
   let value = Math.random();
-  console.log('probability', probability)
-  console.log('value', value)
 
   if (value > probability) {
     return;
   }
 
   const firstSection = document.querySelector('main.content');
-  console.log('firstsection-1(as)')
-  console.log('firstsection-2', firstSection)
 
   if (firstSection && !document.querySelector('div.new')) {
-    console.log('firstsection-3')
 
     const ad = document.createElement("ins");
     ad.className = "adsbygoogle";
@@ -31,6 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
     firstSection.prepend(newDiv);
 
     (adsbygoogle = window.adsbygoogle || []).push({});
-    console.log('firstsection-4')
   }
 });

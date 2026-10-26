@@ -1,0 +1,5 @@
+# g1.djc.pe: la web pública del juego (se indexa). El juego (g1playN.djc.pe) no.
+User-agent: *
+Allow: /
+
+Sitemap: https://g1.djc.pe/sitemap.xml

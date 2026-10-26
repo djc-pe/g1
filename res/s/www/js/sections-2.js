@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const text = section.textContent || '';
     charCount += text.trim().length;
 
-    console.log('chars acumulados:', charCount);
 
     if (charCount >= charSpace) {
       const ad = document.createElement('ins');
