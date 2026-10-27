@@ -133,6 +133,36 @@
     fill: currentColor;
   }
 
+  /*** elegir planeta ***/
+  .djc-planets {
+    margin: 20px 0 24px;
+    text-align: center;
+  }
+
+  .djc-planets .djc-play {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 10px 0;
+  }
+
+  .djc-planets-title {
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 16px;
+  }
+
+  .djc-planets-more {
+    max-width: 70ch;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 13px;
+  }
+
+  .djc-planets-more a {
+    color: var(--color-accent);
+  }
+
   /*** tarjetas (secciones de la guía) ***/
   .djc-g1-card {
     display: block;
@@ -230,11 +260,19 @@
   in your browser, on PC or on your phone, with nothing to download.
   </p>
 
-  <div class="djc-play">
-    <a href="https://g1play2.djc.pe/">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-      Play
-    </a>
+  <div class="djc-planets">
+    <p class="djc-planets-title">Choose the planet you want to play on</p>
+    <div class="djc-play">
+      <a href="https://g1play1.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Planet 1
+      </a>
+      <a href="https://g1play2.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Planet 2
+      </a>
+    </div>
+    <p class="djc-planets-more">Each planet is a different world, with its own terrain, players and king.</p>
   </div>
 
   <a class="djc-g1-card" href="#en-how-to-win">
@@ -275,7 +313,7 @@
 
     <a href="#en-dig-build">
     <h2>Digging and building</h2>
-    <p>Shape the planet block by block and find gold.</p>
+    <p>Shape the planet, move dirt and water, build and find gold.</p>
     </a>
 
     <a href="#en-army">
@@ -311,12 +349,14 @@
     <p class="djc-g1-label">The game</p>
     <h2>What is the game about?</h2>
     <p>You appear on a round planet with green plains, mountains you can climb and an underground
-      full of dirt, rock and veins of gold. The world is home to wolves that hunt in packs, bears
+      full of dirt, rock and veins of gold; the valleys hold lakes and seas. The world is home to wolves that hunt in packs, bears
       that defend their territory and villages with villagers ready to fight… if you pay them well.</p>
     <p>There are no teams: it's <strong>everyone against everyone</strong>. Your goal is to gather the
       most powerful army, whether by taming wild animals or striking deals with villagers, and hold
       on to it against the other players. You can dig, build, explore, fight and negotiate: you
       decide how to reach the top.</p>
+    <p>The sun goes around the planet every 20 minutes: there's <strong>day and night</strong>. At the
+      equator the sun is high at noon; near the poles it barely rises and everything stays in a long sunset.</p>
     <p>The game's interface is in Spanish; in this guide each button's on-screen name appears in
       parentheses so you can recognize it.</p>
   </section>
@@ -326,12 +366,12 @@
     <h2>How to start playing</h2>
     <ol>
       <li><strong>Type your name and press <em>Entrar</em> (Enter).</strong> No sign-up needed.</li>
-      <li><strong>Look around.</strong> You start on a quiet plain, with mountains in sight.</li>
+      <li><strong>Look around.</strong> The first time, you appear in the starting area, day or night. When you die or come back, you appear near where you fell or left, but never next to an enemy.</li>
       <li><strong>Try your tools</strong>: hit the ground, collect material and build something.</li>
       <li><strong>Find your first ally</strong>: an animal to tame or a village to strike a deal with.</li>
     </ol>
     <p>The game remembers your device: when you come back from the same browser, you'll be the same
-      player and get your army back.</p>
+      player, appear where you left off and get your army back.</p>
   </section>
 
   <section class="djc-g1-card" id="en-controls">
@@ -339,9 +379,10 @@
     <h2>How to play on PC and mobile</h2>
     <h3>On PC</h3>
     <ul>
-      <li><strong>W A S D</strong>: walk. <strong>Space</strong>: jump. <strong>Mouse</strong>: look around.</li>
-      <li><strong>Click</strong>: use the tool in your hand (hold to repeat).</li>
-      <li><strong>1 to 7</strong> or the <strong>mouse wheel</strong>: switch tools.</li>
+      <li><strong>W A S D</strong>: walk. <strong>Space</strong>: jump (in water, hold it to swim up). <strong>Mouse</strong>: look around.</li>
+      <li><strong>Click</strong>: use what you have selected (hold to repeat).</li>
+      <li><strong>1 to 9</strong>: select tools; they add up, and pressing again removes them. <strong>0</strong>: none (your hand).</li>
+    <li><strong>B</strong>: with Build, change material. <strong>R</strong>, <strong>T</strong> and <strong>Y</strong>: turn, tilt and lean the first piece of a construction (with Shift, the other way).</li>
       <li><strong>Q</strong>: your army follows you or stays put. <strong>E</strong>: your army attacks what you're aiming at.</li>
       <li><strong>C</strong>: open the chat. <strong>Esc</strong>: release the mouse.</li>
     </ul>
@@ -349,7 +390,7 @@
     <ul>
       <li>Put your finger on the <strong>left side</strong> of the screen and a joystick will appear for walking.</li>
       <li><strong>Drag anywhere else</strong> on the screen to look around.</li>
-      <li>Buttons <strong>Use</strong> (<em>Usar</em>), <strong>Jump</strong> (<em>Saltar</em>), <strong>Follow me/Stay</strong> (<em>Seguirme/Quedarse</em>) and <strong>Attack</strong> (<em>Atacar</em>).</li>
+      <li>Two buttons: <strong>Use</strong> (<em>Usar</em>) and <strong>Jump</strong> (<em>Saltar</em>). To give orders to your army, pick the <strong>Army</strong> tool (<em>Ejército</em>).</li>
       <li>The tools are at the bottom; if they don't fit, swipe them sideways (the arrows let you know there are more).</li>
       <li>You can play in <strong>portrait or landscape</strong>, whichever feels more comfortable.</li>
     </ul>
@@ -359,12 +400,16 @@
     <p class="djc-g1-label">Tools</p>
     <h2>Your tools</h2>
     <ul>
-      <li><strong>Hand</strong> (<em>Mano</em>): hit whoever is in front of you or dig the ground.</li>
+      <li><strong>Nothing selected</strong>: your hand (<em>Mano</em>); hit whoever is in front of you or dig the ground.</li>
+      <li><strong>You can combine them</strong>: for example <strong>Stone + Tame</strong> hits hard until the animal is weak and then tames it. <strong>Dirt</strong>, <strong>Rock</strong>, <strong>Water</strong> and <strong>Build</strong>: only one of them; <strong>Throw</strong> and <strong>Army</strong> go alone.</li>
       <li><strong>Stone</strong> (<em>Piedra</em>): the same, but with more strength.</li>
       <li><strong>Throw</strong> (<em>Lanzar</em>): throw stones at a distance; they fall to the ground and you can pick them up again.</li>
-      <li><strong>Dirt</strong> (<em>Tierra</em>) and <strong>Rock</strong> (<em>Roca</em>): place blocks to raise walls, stairs or shelters.</li>
-      <li><strong>Tame</strong> (<em>Domar</em>): turn a weakened animal into part of your army.</li>
-      <li><strong>Deal</strong> (<em>Pactar</em>): pay a villager to fight by your side.</li>
+      <li><strong>Dirt</strong> (<em>Tierra</em>): drop a handful of dirt where you aim; pour a lot in the same spot and it piles up. <strong>Rock</strong> (<em>Roca</em>): place a rock (it uses a stone). If someone is right in front of you, you hit them as with your hand.</li>
+    <li><strong>Water</strong> (<em>Agua</em>): a bucket. Aim at water to scoop a handful; aim at the ground to pour it, and it runs downhill.</li>
+    <li><strong>Build</strong> (<em>Construir</em>): place pieces of <strong>pyrite</strong> (cubes), <strong>quartz</strong> (prisms) or <strong>iron</strong> (octahedra). Before placing one you see where it will go; pieces of the same material fit together.</li>
+      <li><strong>Tame</strong> (<em>Domar</em>): hits like your hand and, once the animal is weak, your next hit tames it instead of hurting it (so you never kill it by accident).</li>
+      <li><strong>Deal</strong> (<em>Pactar</em>): with a villager in front of you, you pay them to fight by your side (if you can't afford it, it tells you what you're missing and doesn't hit them); with anyone else, it hits like your hand.</li>
+      <li><strong>Army</strong> (<em>Ejército</em>): if you aim at an enemy, your army attacks it; if not, it switches between following you and staying put.</li>
     </ul>
     <p>You start with some dirt and stones. <strong>Gold</strong> is found by digging deep, among the
       rock, and it's the currency villagers value most.</p>
@@ -384,11 +429,15 @@
   <section class="djc-g1-card" id="en-dig-build">
     <p class="djc-g1-label">The planet</p>
     <h2>Digging and building</h2>
-    <p>The planet can be shaped block by block. Dirt gives way in a few hits, rock holds out much
-      longer and gold is the hardest of all. Every block you break goes into your inventory: dirt
-      gives you dirt, and rock gives you stones.</p>
-    <p>With that material you can build: steps to climb a mountain, a wall to hold off the wolves or
-      a tower from which to watch over your army. If you dig a hole under your feet, jump to get out.</p>
+    <p>You can shape the planet as you like. <strong>Dirt</strong> comes out in handfuls, one per hit, and it's
+      loose: pile it up and it slides into a slope, and if you dig next to a hole its edges crumble a
+      little. <strong>Rock</strong> takes several hits and gives you a stone, and <strong>gold</strong> is the
+      hardest of all. The planet's bedrock can't be dug.</p>
+    <p><strong>Water</strong> flows: open a trench next to a lake and the lake fills it; pour water into a hole and
+      it stays at the bottom. You can swim and dive.</p>
+    <p>To <strong>build</strong> you have three materials, each with its own shape: pyrite cubes, quartz prisms and
+      iron octahedra. A construction starts upright on the planet, and pieces of the same material fit
+      onto it. If you dig a hole under your feet, jump to get out.</p>
   </section>
 
   <section class="djc-g1-card" id="en-army">
@@ -397,7 +446,8 @@
     <h3>Taming animals</h3>
     <p><strong>Wolves</strong> are fast and travel in packs; <strong>bears</strong> are slow but very
       powerful. To tame them, you first have to <strong>weaken them</strong>: when they have little
-      health left (less than a third), choose <em>Domar</em> (Tame) and get close. From then on they'll
+      health left (less than a third), your next hit tames them. The easiest way: pick <em>Domar</em> (Tame)
+    from the start and fight with it. From then on they'll
       follow and protect you.</p>
     <h3>Striking deals with villagers</h3>
     <p>Villages are home to villagers with different trades. If you pay their price in materials,
@@ -467,11 +517,19 @@
       restart the world, so make the most of every match.</p>
   </section>
 
-  <div class="djc-play">
-    <a href="https://g1play2.djc.pe/">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-      Start playing
-    </a>
+  <div class="djc-planets">
+    <p class="djc-planets-title">Choose the planet you want to play on</p>
+    <div class="djc-play">
+      <a href="https://g1play1.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Planet 1
+      </a>
+      <a href="https://g1play2.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Planet 2
+      </a>
+    </div>
+    <p class="djc-planets-more">Each planet is a different world, with its own terrain, players and king.</p>
   </div>
 
   </div>
@@ -486,11 +544,21 @@
   se juega en el navegador, en la PC o en el celular, sin descargar nada.
   </p>
 
-  <div class="djc-play">
-    <a href="https://g1play2.djc.pe/">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-      Jugar
-    </a>
+  <div class="djc-planets">
+    <p class="djc-planets-title">Elige en qué planeta jugar</p>
+    <div class="djc-play">
+      <a href="https://g1play1.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Planeta 1
+      </a>
+      <a href="https://g1play2.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Planeta 2
+      </a>
+    </div>
+    <p class="djc-planets-more">Cada planeta es un mundo distinto, con su propio terreno, sus jugadores
+      y su rey. Conócelos: <a href="https://g1play1.djc.pe/es/">Planeta 1</a> ·
+      <a href="https://g1play2.djc.pe/es/">Planeta 2</a></p>
   </div>
 
   <a class="djc-g1-card" href="#es-como-ganar">
@@ -531,7 +599,7 @@
 
     <a href="#es-cavar-construir">
     <h2>Cavar y construir</h2>
-    <p>Moldea el planeta bloque a bloque y encuentra oro.</p>
+    <p>Moldea el planeta, mueve tierra y agua, construye y encuentra oro.</p>
     </a>
 
     <a href="#es-ejercito">
@@ -567,12 +635,14 @@
     <p class="djc-g1-label">El juego</p>
     <h2>¿De qué trata el juego?</h2>
     <p>Apareces en un planeta redondo, con llanuras verdes, montañas que puedes escalar y un subsuelo
-      lleno de tierra, roca y vetas de oro. Por el mundo viven lobos que cazan en manada, osos que
+      lleno de tierra, roca y vetas de oro; en los valles hay lagos y mares. Por el mundo viven lobos que cazan en manada, osos que
       defienden su territorio y aldeas con aldeanos dispuestos a luchar… si les pagas bien.</p>
     <p>No hay equipos: es <strong>todos contra todos</strong>. Tu objetivo es reunir el ejército más
       poderoso, ya sea domando animales salvajes o pactando con aldeanos, y mantenerlo frente a los
       demás jugadores. Puedes cavar, construir, explorar, pelear y negociar: tú decides cómo llegar
       a lo más alto.</p>
+    <p>El sol da la vuelta al planeta cada 20 minutos: hay <strong>día y noche</strong>. En el ecuador el
+      sol pasa alto a mediodía; cerca de los polos apenas se levanta y todo queda en un largo atardecer.</p>
   </section>
 
   <section class="djc-g1-card" id="es-como-empezar">
@@ -580,12 +650,12 @@
     <h2>Cómo empezar a jugar</h2>
     <ol>
       <li><strong>Escribe tu nombre y pulsa 'Entrar'.</strong> No hace falta registrarse.</li>
-      <li><strong>Mira a tu alrededor.</strong> Empiezas en una llanura tranquila, con montañas a la vista.</li>
+      <li><strong>Mira a tu alrededor.</strong> La primera vez apareces en la zona de inicio, sea de día o de noche. Al morir o al volver, apareces cerca de donde caíste o te fuiste, pero nunca junto a un enemigo.</li>
       <li><strong>Prueba tus herramientas</strong>: golpea el suelo, recoge material y construye algo.</li>
       <li><strong>Busca tu primer aliado</strong>: un animal al que domar o una aldea con la que pactar.</li>
     </ol>
     <p>El juego recuerda tu dispositivo: cuando vuelvas desde el mismo navegador, serás el mismo
-      jugador y recuperarás tu ejército.</p>
+      jugador, aparecerás donde lo dejaste y recuperarás tu ejército.</p>
   </section>
 
   <section class="djc-g1-card" id="es-controles">
@@ -593,9 +663,10 @@
     <h2>Cómo se juega en la PC y en el celular</h2>
     <h3>En la PC</h3>
     <ul>
-      <li><strong>W A S D</strong>: andar. <strong>Espacio</strong>: saltar. <strong>Ratón</strong>: mirar.</li>
-      <li><strong>Clic</strong>: usar la herramienta que llevas en la mano (mantén pulsado para repetir).</li>
-      <li><strong>1 a 7</strong> o la <strong>rueda del ratón</strong>: cambiar de herramienta.</li>
+      <li><strong>W A S D</strong>: andar. <strong>Espacio</strong>: saltar (en el agua, mantenlo para subir nadando). <strong>Ratón</strong>: mirar.</li>
+      <li><strong>Clic</strong>: usar lo que tienes elegido (mantén pulsado para repetir).</li>
+      <li><strong>1 a 9</strong>: elegir herramientas; se suman y, si pulsas otra vez, se quitan. <strong>0</strong>: ninguna (la mano).</li>
+    <li><strong>B</strong>: con Construir, cambiar de material. <strong>R</strong>, <strong>T</strong> e <strong>Y</strong>: girar, inclinar y ladear la primera pieza de una construcción (con Mayús, al revés).</li>
       <li><strong>Q</strong>: tu ejército te sigue o se queda quieto. <strong>E</strong>: tu ejército ataca a lo que apuntas.</li>
       <li><strong>C</strong>: abrir el chat. <strong>Esc</strong>: soltar el ratón.</li>
     </ul>
@@ -603,7 +674,7 @@
     <ul>
       <li>Pon el dedo en la <strong>parte izquierda</strong> de la pantalla y aparecerá un joystick para andar.</li>
       <li><strong>Arrastra en el resto</strong> de la pantalla para mirar.</li>
-      <li>Botones <strong>Usar</strong>, <strong>Saltar</strong>, <strong>Seguirme/Quedarse</strong> y <strong>Atacar</strong>.</li>
+      <li>Dos botones: <strong>Usar</strong> y <strong>Saltar</strong>. Para dar órdenes a tu ejército, elige la herramienta <strong>Ejército</strong>.</li>
       <li>Las herramientas están abajo; si no caben, deslízalas de lado (las flechas te avisan de que hay más).</li>
       <li>Puedes jugar en <strong>vertical o en horizontal</strong>, como te resulte más cómodo.</li>
     </ul>
@@ -613,12 +684,16 @@
     <p class="djc-g1-label">Herramientas</p>
     <h2>Tus herramientas</h2>
     <ul>
-      <li><strong>Mano</strong>: golpea a quien tengas delante o cava el terreno.</li>
+      <li><strong>Sin nada elegido</strong>: la mano; golpea a quien tengas delante o cava el terreno.</li>
+      <li><strong>Puedes combinarlas</strong>: por ejemplo <strong>Piedra + Domar</strong> pega fuerte hasta debilitar al animal y luego lo doma. <strong>Tierra</strong>, <strong>Roca</strong>, <strong>Agua</strong> y <strong>Construir</strong>: solo una de ellas; <strong>Lanzar</strong> y <strong>Ejército</strong> van solas.</li>
       <li><strong>Piedra</strong>: lo mismo, pero con más fuerza.</li>
       <li><strong>Lanzar</strong>: tira piedras a distancia; caen al suelo y puedes volver a recogerlas.</li>
-      <li><strong>Tierra</strong> y <strong>Roca</strong>: construye bloques para levantar muros, escaleras o refugios.</li>
-      <li><strong>Domar</strong>: convierte a un animal debilitado en parte de tu ejército.</li>
-      <li><strong>Pactar</strong>: paga a un aldeano para que luche a tu lado.</li>
+      <li><strong>Tierra</strong>: echa un puñado de tierra donde apuntas; si echas mucho en el mismo sitio, se forma un montón. <strong>Roca</strong>: pon una roca (gasta una piedra). Si tienes a alguien delante, lo golpeas como con la mano.</li>
+    <li><strong>Agua</strong>: un cubo. Apuntando al agua, coges un puñado; apuntando al suelo, lo viertes y corre cuesta abajo.</li>
+    <li><strong>Construir</strong>: pon piezas de <strong>pirita</strong> (cubos), <strong>cuarzo</strong> (prismas) o <strong>hierro</strong> (octaedros). Antes de poner una ves dónde irá; las del mismo material encajan entre sí.</li>
+      <li><strong>Domar</strong>: golpea como la mano y, cuando el animal ya está débil, el siguiente golpe lo doma en vez de dañarlo (así no lo matas sin querer).</li>
+      <li><strong>Pactar</strong>: con un aldeano delante, le pagas para que luche a tu lado (si no te alcanza, te dice qué te falta y no lo golpeas); con cualquier otro, golpea como la mano.</li>
+      <li><strong>Ejército</strong>: si apuntas a un enemigo, tu ejército lo ataca; si no, alterna entre seguirte y quedarse quieto.</li>
     </ul>
     <p>Empiezas con algo de tierra y piedras. El <strong>oro</strong> se encuentra cavando hondo, entre
       la roca, y es la moneda que más valoran los aldeanos.</p>
@@ -638,12 +713,15 @@
   <section class="djc-g1-card" id="es-cavar-construir">
     <p class="djc-g1-label">El planeta</p>
     <h2>Cavar y construir</h2>
-    <p>El planeta se puede moldear bloque a bloque. La tierra cede en pocos golpes, la roca aguanta
-      bastante más y el oro es lo más duro de todo. Cada bloque que rompes se queda en tu
-      inventario: la tierra te da tierra, y la roca te da piedras.</p>
-    <p>Con ese material puedes construir: escalones para subir a una montaña, un muro para frenar a
-      los lobos o una torre desde la que vigilar a tu ejército. Si cavas un hoyo bajo tus pies, salta
-      para salir.</p>
+    <p>El planeta se puede moldear a tu gusto. La <strong>tierra</strong> sale a puñados, uno por golpe, y es
+      suelta: si la amontonas resbala hasta formar una ladera, y si cavas junto a un hoyo, los bordes
+      se derrumban un poco. La <strong>roca</strong> aguanta varios golpes y te da una piedra, y el
+      <strong>oro</strong> es lo más duro de todo. La base del planeta no se puede cavar.</p>
+    <p>El <strong>agua</strong> corre: si abres una zanja junto a un lago, el lago la llena; si viertes agua en un
+      hoyo, se queda en el fondo. Puedes nadar y bucear.</p>
+    <p>Para <strong>construir</strong> tienes tres materiales, y cada uno tiene su forma: cubos de pirita, prismas
+      de cuarzo y octaedros de hierro. Una construcción empieza de pie sobre el planeta y las piezas
+      del mismo material encajan con ella. Si cavas un hoyo bajo tus pies, salta para salir.</p>
   </section>
 
   <section class="djc-g1-card" id="es-ejercito">
@@ -652,7 +730,8 @@
     <h3>Domar animales</h3>
     <p>Los <strong>lobos</strong> son rápidos y van en manada; los <strong>osos</strong> son lentos pero
       muy poderosos. Para domarlos, primero hay que <strong>debilitarlos</strong>: cuando les quede poca
-      vida (menos de un tercio), elige «Domar» y acércate. A partir de ese momento te seguirán y te
+      vida (menos de un tercio), el siguiente golpe los doma. Lo más fácil: elige «Domar» desde el
+    principio y pelea con esa herramienta. A partir de ese momento te seguirán y te
       protegerán.</p>
     <h3>Pactar con aldeanos</h3>
     <p>En las aldeas viven aldeanos con distintos oficios. Si les pagas su precio en materiales, se
@@ -722,11 +801,21 @@
       mundo empiece de nuevo, así que aprovecha cada partida.</p>
   </section>
 
-  <div class="djc-play">
-    <a href="https://g1play2.djc.pe/">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-      Empezar a jugar
-    </a>
+  <div class="djc-planets">
+    <p class="djc-planets-title">Elige en qué planeta jugar</p>
+    <div class="djc-play">
+      <a href="https://g1play1.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Planeta 1
+      </a>
+      <a href="https://g1play2.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Planeta 2
+      </a>
+    </div>
+    <p class="djc-planets-more">Cada planeta es un mundo distinto, con su propio terreno, sus jugadores
+      y su rey. Conócelos: <a href="https://g1play1.djc.pe/es/">Planeta 1</a> ·
+      <a href="https://g1play2.djc.pe/es/">Planeta 2</a></p>
   </div>
 
   </div>
@@ -741,11 +830,19 @@
   在浏览器中即可游玩，PC 和手机都支持，无需下载。
   </p>
 
-  <div class="djc-play">
-    <a href="https://g1play2.djc.pe/">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-      开始游戏
-    </a>
+  <div class="djc-planets">
+    <p class="djc-planets-title">选择你要玩的星球</p>
+    <div class="djc-play">
+      <a href="https://g1play1.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        星球 1
+      </a>
+      <a href="https://g1play2.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        星球 2
+      </a>
+    </div>
+    <p class="djc-planets-more">每个星球都是一个不同的世界，有自己的地形、玩家和国王。</p>
   </div>
 
   <a class="djc-g1-card" href="#zh-how-to-win">
@@ -786,7 +883,7 @@
 
     <a href="#zh-dig-build">
     <h2>挖掘与建造</h2>
-    <p>一块一块地改造星球，并找到金矿。</p>
+    <p>改造星球，搬运泥土和水，建造并找到金矿。</p>
     </a>
 
     <a href="#zh-army">
@@ -821,11 +918,12 @@
   <section class="djc-g1-card" id="zh-what-is-it">
     <p class="djc-g1-label">游戏介绍</p>
     <h2>这是一款什么样的游戏？</h2>
-    <p>你会出现在一个圆形的星球上，这里有绿色的平原、可以攀登的高山，地下则布满泥土、岩石和金矿脉。
+    <p>你会出现在一个圆形的星球上，这里有绿色的平原、可以攀登的高山，地下则布满泥土、岩石和金矿脉，山谷里还有湖泊和海洋。
       这个世界里生活着成群狩猎的狼、守护领地的熊，还有村庄里的村民——只要你给的报酬够好，他们就愿意为你而战。</p>
     <p>没有队伍之分：这是一场<strong>所有人对抗所有人</strong>的较量。你的目标是组建最强大的军队，
       无论是驯服野生动物还是与村民结盟，并在其他玩家面前守住它。你可以挖掘、建造、探索、战斗和谈判：
       如何登上顶峰，由你决定。</p>
+    <p>太阳每 20 分钟绕星球转一圈：这里有<strong>白天和黑夜</strong>。在赤道上，正午的太阳很高；靠近两极时，太阳几乎升不起来，一切都停留在漫长的黄昏中。</p>
     <p>游戏界面目前为西班牙语；本指南会在括号中注明每个按钮在屏幕上显示的名称，方便你辨认。</p>
   </section>
 
@@ -834,11 +932,11 @@
     <h2>如何开始游戏</h2>
     <ol>
       <li><strong>输入你的名字，然后点击“进入”（<em>Entrar</em>）。</strong>无需注册。</li>
-      <li><strong>环顾四周。</strong>你会出生在一片宁静的平原上，远处可以看到高山。</li>
+      <li><strong>环顾四周。</strong>第一次进入时，你会出现在起始区域，无论白天还是黑夜。死亡或重新进入时，你会出现在倒下或离开的地方附近，但绝不会紧挨着敌人。</li>
       <li><strong>试试你的工具</strong>：敲击地面、收集材料，然后建造点什么。</li>
       <li><strong>寻找你的第一个盟友</strong>：一只可以驯服的动物，或一个可以结盟的村庄。</li>
     </ol>
-    <p>游戏会记住你的设备：当你用同一个浏览器回来时，你还是同一个玩家，并能找回你的军队。</p>
+    <p>游戏会记住你的设备：当你用同一个浏览器回来时，你还是同一个玩家，会出现在你离开的地方，并能找回你的军队。</p>
   </section>
 
   <section class="djc-g1-card" id="zh-controls">
@@ -846,9 +944,10 @@
     <h2>在 PC 和手机上怎么玩</h2>
     <h3>PC 端</h3>
     <ul>
-      <li><strong>W A S D</strong>：移动。<strong>空格键</strong>：跳跃。<strong>鼠标</strong>：观察四周。</li>
-      <li><strong>点击</strong>：使用手中的工具（按住可连续使用）。</li>
-      <li><strong>1 到 7</strong> 或<strong>鼠标滚轮</strong>：切换工具。</li>
+      <li><strong>W A S D</strong>：移动。<strong>空格键</strong>：跳跃（在水中按住可以向上游）。<strong>鼠标</strong>：观察四周。</li>
+      <li><strong>点击</strong>：使用已选择的工具（按住可连续使用）。</li>
+      <li><strong>1 到 9</strong>：选择工具，可以同时选择多个，再按一次即取消。<strong>0</strong>：全部取消（徒手）。</li>
+    <li><strong>B</strong>：使用"建造"时切换材料。<strong>R</strong>、<strong>T</strong>、<strong>Y</strong>：旋转、倾斜和侧倾一个新建筑的第一块（按住 Shift 则反向）。</li>
       <li><strong>Q</strong>：让军队跟随你或原地待命。<strong>E</strong>：让军队攻击你瞄准的目标。</li>
       <li><strong>C</strong>：打开聊天。<strong>Esc</strong>：释放鼠标。</li>
     </ul>
@@ -856,7 +955,7 @@
     <ul>
       <li>将手指放在屏幕<strong>左侧</strong>，就会出现一个用于移动的摇杆。</li>
       <li>在屏幕<strong>其他区域拖动</strong>即可观察四周。</li>
-      <li>按钮包括<strong>使用</strong>（<em>Usar</em>）、<strong>跳跃</strong>（<em>Saltar</em>）、<strong>跟随/待命</strong>（<em>Seguirme/Quedarse</em>）和<strong>攻击</strong>（<em>Atacar</em>）。</li>
+      <li>只有两个按钮：<strong>使用</strong>（<em>Usar</em>）和<strong>跳跃</strong>（<em>Saltar</em>）。要指挥军队，请选择<strong>军队</strong>工具（<em>Ejército</em>）。</li>
       <li>工具位于屏幕底部；如果放不下，可以左右滑动（箭头会提示还有更多工具）。</li>
       <li>可以<strong>竖屏或横屏</strong>游玩，怎么舒服怎么来。</li>
     </ul>
@@ -866,12 +965,16 @@
     <p class="djc-g1-label">工具</p>
     <h2>你的工具</h2>
     <ul>
-      <li><strong>手</strong>（<em>Mano</em>）：攻击面前的目标，或挖掘地面。</li>
+      <li><strong>不选择任何工具</strong>：徒手（<em>Mano</em>），攻击面前的目标，或挖掘地面。</li>
+      <li><strong>工具可以组合</strong>：例如<strong>石头 + 驯服</strong>会用力攻击，等动物虚弱后再驯服它。<strong>泥土</strong>、<strong>岩石</strong>、<strong>水</strong>和<strong>建造</strong>只能选其一，<strong>投掷</strong>和<strong>军队</strong>只能单独使用。</li>
       <li><strong>石头</strong>（<em>Piedra</em>）：作用相同，但力量更大。</li>
       <li><strong>投掷</strong>（<em>Lanzar</em>）：远距离投掷石块；石块会落在地上，你可以再捡回来。</li>
-      <li><strong>泥土</strong>（<em>Tierra</em>）和<strong>岩石</strong>（<em>Roca</em>）：放置方块，搭建墙壁、阶梯或庇护所。</li>
-      <li><strong>驯服</strong>（<em>Domar</em>）：把一只虚弱的动物变成你军队的一员。</li>
-      <li><strong>结盟</strong>（<em>Pactar</em>）：付钱让村民站在你这边作战。</li>
+      <li><strong>泥土</strong>（<em>Tierra</em>）：在你瞄准的地方撒一把泥土；在同一处撒多了会堆成土堆。<strong>岩石</strong>（<em>Roca</em>）：放一块岩石（消耗一块石头）。如果有人就在你面前，你会像徒手一样攻击他。</li>
+    <li><strong>水</strong>（<em>Agua</em>）：一个水桶。瞄准水面可以舀一把水；瞄准地面则把水倒出来，水会顺坡流下。</li>
+    <li><strong>建造</strong>（<em>Construir</em>）：放置<strong>黄铁矿</strong>（立方体）、<strong>石英</strong>（六棱柱）或<strong>铁</strong>（八面体）的构件。放置前可以看到它的位置；同一种材料的构件会互相拼接。</li>
+      <li><strong>驯服</strong>（<em>Domar</em>）：像徒手一样攻击；当动物已经虚弱时，下一击会驯服它而不是伤害它（这样就不会误杀它）。</li>
+      <li><strong>结盟</strong>（<em>Pactar</em>）：面对村民时，付钱让他站在你这边作战（钱不够时会提示你还缺什么，并且不会攻击他）；面对其他目标时，像徒手一样攻击。</li>
+      <li><strong>军队</strong>（<em>Ejército</em>）：瞄准敌人时，你的军队会攻击它；否则在跟随你和原地待命之间切换。</li>
     </ul>
     <p>开局时你会有一些泥土和石头。<strong>黄金</strong>要往深处挖，在岩石之间才能找到，
       它是村民最看重的货币。</p>
@@ -890,10 +993,12 @@
   <section class="djc-g1-card" id="zh-dig-build">
     <p class="djc-g1-label">星球</p>
     <h2>挖掘与建造</h2>
-    <p>这个星球可以一块一块地改造。泥土敲几下就会松动，岩石要耐打得多，而黄金是最坚硬的。
-      你打碎的每一个方块都会进入你的背包：泥土给你泥土，岩石给你石头。</p>
-    <p>用这些材料你可以建造：登山用的台阶、挡住狼群的城墙，或是一座用来守望军队的高塔。
-      如果你在脚下挖了个坑，跳一下就能出来。</p>
+    <p>这个星球可以随你改造。<strong>泥土</strong>每敲一下就挖出一把，而且是松散的：堆起来会滑成斜坡，
+      在坑边挖土时坑沿也会塌下一些。<strong>岩石</strong>要敲好几下，会给你一块石头，而<strong>黄金</strong>是最坚硬的。
+      星球的基岩无法挖掘。</p>
+    <p><strong>水</strong>会流动：在湖边挖一条沟，湖水就会灌进来；把水倒进坑里，水会留在坑底。你可以游泳和潜水。</p>
+    <p><strong>建造</strong>有三种材料，每种都有自己的形状：黄铁矿立方体、石英六棱柱和铁八面体。
+      一座建筑会竖直地立在星球上，同一种材料的构件会拼接在一起。如果你在脚下挖了个坑，跳一下就能出来。</p>
   </section>
 
   <section class="djc-g1-card" id="zh-army">
@@ -902,7 +1007,7 @@
     <h3>驯服动物</h3>
     <p><strong>狼</strong>速度快，成群行动；<strong>熊</strong>行动缓慢，但非常强大。
       要驯服它们，首先得<strong>削弱它们</strong>：当它们的生命所剩不多（不到三分之一）时，
-      选择“驯服”（<em>Domar</em>）并靠近它们。从那一刻起，它们就会跟随并保护你。</p>
+      下一击就会驯服它们。最简单的方法：一开始就选择“驯服”（<em>Domar</em>）用它战斗。从那一刻起，它们就会跟随并保护你。</p>
     <h3>与村民结盟</h3>
     <p>村庄里住着从事不同职业的村民。只要用材料支付他们的价码，他们就会加入你：</p>
     <ul>
@@ -965,11 +1070,19 @@
       所以请珍惜每一局游戏。</p>
   </section>
 
-  <div class="djc-play">
-    <a href="https://g1play2.djc.pe/">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-      立即开始游戏
-    </a>
+  <div class="djc-planets">
+    <p class="djc-planets-title">选择你要玩的星球</p>
+    <div class="djc-play">
+      <a href="https://g1play1.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        星球 1
+      </a>
+      <a href="https://g1play2.djc.pe/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        星球 2
+      </a>
+    </div>
+    <p class="djc-planets-more">每个星球都是一个不同的世界，有自己的地形、玩家和国王。</p>
   </div>
 
   </div>

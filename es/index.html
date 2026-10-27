@@ -133,6 +133,36 @@
     fill: currentColor;
   }
 
+  /*** elegir planeta ***/
+  .djc-planets {
+    margin: 20px 0 24px;
+    text-align: center;
+  }
+
+  .djc-planets .djc-play {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 10px 0;
+  }
+
+  .djc-planets-title {
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 16px;
+  }
+
+  .djc-planets-more {
+    max-width: 70ch;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 13px;
+  }
+
+  .djc-planets-more a {
+    color: var(--color-accent);
+  }
+
   /*** tarjetas (secciones de la guía) ***/
   .djc-g1-card {
     display: block;
@@ -215,11 +245,21 @@ Un planeta entero, muchos jugadores y una sola corona. DJC G1 es un juego multij
 se juega en el navegador, en la PC o en el celular, sin descargar nada.
 </p>
 
-<div class="djc-play">
-  <a href="https://g1play2.djc.pe/">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-    Jugar
-  </a>
+<div class="djc-planets">
+  <p class="djc-planets-title">Elige en qué planeta jugar</p>
+  <div class="djc-play">
+    <a href="https://g1play1.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      Planeta 1
+    </a>
+    <a href="https://g1play2.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      Planeta 2
+    </a>
+  </div>
+  <p class="djc-planets-more">Cada planeta es un mundo distinto, con su propio terreno, sus jugadores
+    y su rey. Conócelos: <a href="https://g1play1.djc.pe/es/">Planeta 1</a> ·
+    <a href="https://g1play2.djc.pe/es/">Planeta 2</a></p>
 </div>
 
 <a class="djc-g1-card" href="#como-ganar">
@@ -260,7 +300,7 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
 
   <a href="#cavar-construir">
   <h2>Cavar y construir</h2>
-  <p>Moldea el planeta bloque a bloque y encuentra oro.</p>
+  <p>Moldea el planeta, mueve tierra y agua, construye y encuentra oro.</p>
   </a>
 
   <a href="#ejercito">
@@ -296,12 +336,14 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
   <p class="djc-g1-label">El juego</p>
   <h2>¿De qué trata el juego?</h2>
   <p>Apareces en un planeta redondo, con llanuras verdes, montañas que puedes escalar y un subsuelo
-    lleno de tierra, roca y vetas de oro. Por el mundo viven lobos que cazan en manada, osos que
+    lleno de tierra, roca y vetas de oro; en los valles hay lagos y mares. Por el mundo viven lobos que cazan en manada, osos que
     defienden su territorio y aldeas con aldeanos dispuestos a luchar… si les pagas bien.</p>
   <p>No hay equipos: es <strong>todos contra todos</strong>. Tu objetivo es reunir el ejército más
     poderoso, ya sea domando animales salvajes o pactando con aldeanos, y mantenerlo frente a los
     demás jugadores. Puedes cavar, construir, explorar, pelear y negociar: tú decides cómo llegar
     a lo más alto.</p>
+  <p>El sol da la vuelta al planeta cada 20 minutos: hay <strong>día y noche</strong>. En el ecuador el
+    sol pasa alto a mediodía; cerca de los polos apenas se levanta y todo queda en un largo atardecer.</p>
 </section>
 
 <section class="djc-g1-card" id="como-empezar">
@@ -309,12 +351,12 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
   <h2>Cómo empezar a jugar</h2>
   <ol>
     <li><strong>Escribe tu nombre y pulsa 'Entrar'.</strong> No hace falta registrarse.</li>
-    <li><strong>Mira a tu alrededor.</strong> Empiezas en una llanura tranquila, con montañas a la vista.</li>
+    <li><strong>Mira a tu alrededor.</strong> La primera vez apareces en la zona de inicio, sea de día o de noche. Al morir o al volver, apareces cerca de donde caíste o te fuiste, pero nunca junto a un enemigo.</li>
     <li><strong>Prueba tus herramientas</strong>: golpea el suelo, recoge material y construye algo.</li>
     <li><strong>Busca tu primer aliado</strong>: un animal al que domar o una aldea con la que pactar.</li>
   </ol>
   <p>El juego recuerda tu dispositivo: cuando vuelvas desde el mismo navegador, serás el mismo
-    jugador y recuperarás tu ejército.</p>
+    jugador, aparecerás donde lo dejaste y recuperarás tu ejército.</p>
 </section>
 
 <section class="djc-g1-card" id="controles">
@@ -322,9 +364,10 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
   <h2>Cómo se juega en la PC y en el celular</h2>
   <h3>En la PC</h3>
   <ul>
-    <li><strong>W A S D</strong>: andar. <strong>Espacio</strong>: saltar. <strong>Ratón</strong>: mirar.</li>
-    <li><strong>Clic</strong>: usar la herramienta que llevas en la mano (mantén pulsado para repetir).</li>
-    <li><strong>1 a 7</strong> o la <strong>rueda del ratón</strong>: cambiar de herramienta.</li>
+    <li><strong>W A S D</strong>: andar. <strong>Espacio</strong>: saltar (en el agua, mantenlo para subir nadando). <strong>Ratón</strong>: mirar.</li>
+    <li><strong>Clic</strong>: usar lo que tienes elegido (mantén pulsado para repetir).</li>
+    <li><strong>1 a 9</strong>: elegir herramientas; se suman y, si pulsas otra vez, se quitan. <strong>0</strong>: ninguna (la mano).</li>
+    <li><strong>B</strong>: con Construir, cambiar de material. <strong>R</strong>, <strong>T</strong> e <strong>Y</strong>: girar, inclinar y ladear la primera pieza de una construcción (con Mayús, al revés).</li>
     <li><strong>Q</strong>: tu ejército te sigue o se queda quieto. <strong>E</strong>: tu ejército ataca a lo que apuntas.</li>
     <li><strong>C</strong>: abrir el chat. <strong>Esc</strong>: soltar el ratón.</li>
   </ul>
@@ -332,7 +375,7 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
   <ul>
     <li>Pon el dedo en la <strong>parte izquierda</strong> de la pantalla y aparecerá un joystick para andar.</li>
     <li><strong>Arrastra en el resto</strong> de la pantalla para mirar.</li>
-    <li>Botones <strong>Usar</strong>, <strong>Saltar</strong>, <strong>Seguirme/Quedarse</strong> y <strong>Atacar</strong>.</li>
+    <li>Dos botones: <strong>Usar</strong> y <strong>Saltar</strong>. Para dar órdenes a tu ejército, elige la herramienta <strong>Ejército</strong>.</li>
     <li>Las herramientas están abajo; si no caben, deslízalas de lado (las flechas te avisan de que hay más).</li>
     <li>Puedes jugar en <strong>vertical o en horizontal</strong>, como te resulte más cómodo.</li>
   </ul>
@@ -342,12 +385,16 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
   <p class="djc-g1-label">Herramientas</p>
   <h2>Tus herramientas</h2>
   <ul>
-    <li><strong>Mano</strong>: golpea a quien tengas delante o cava el terreno.</li>
+    <li><strong>Sin nada elegido</strong>: la mano; golpea a quien tengas delante o cava el terreno.</li>
+    <li><strong>Puedes combinarlas</strong>: por ejemplo <strong>Piedra + Domar</strong> pega fuerte hasta debilitar al animal y luego lo doma. <strong>Tierra</strong>, <strong>Roca</strong>, <strong>Agua</strong> y <strong>Construir</strong>: solo una de ellas; <strong>Lanzar</strong> y <strong>Ejército</strong> van solas.</li>
     <li><strong>Piedra</strong>: lo mismo, pero con más fuerza.</li>
     <li><strong>Lanzar</strong>: tira piedras a distancia; caen al suelo y puedes volver a recogerlas.</li>
-    <li><strong>Tierra</strong> y <strong>Roca</strong>: construye bloques para levantar muros, escaleras o refugios.</li>
-    <li><strong>Domar</strong>: convierte a un animal debilitado en parte de tu ejército.</li>
-    <li><strong>Pactar</strong>: paga a un aldeano para que luche a tu lado.</li>
+    <li><strong>Tierra</strong>: echa un puñado de tierra donde apuntas; si echas mucho en el mismo sitio, se forma un montón. <strong>Roca</strong>: pon una roca (gasta una piedra). Si tienes a alguien delante, lo golpeas como con la mano.</li>
+    <li><strong>Agua</strong>: un cubo. Apuntando al agua, coges un puñado; apuntando al suelo, lo viertes y corre cuesta abajo.</li>
+    <li><strong>Construir</strong>: pon piezas de <strong>pirita</strong> (cubos), <strong>cuarzo</strong> (prismas) o <strong>hierro</strong> (octaedros). Antes de poner una ves dónde irá; las del mismo material encajan entre sí.</li>
+    <li><strong>Domar</strong>: golpea como la mano y, cuando el animal ya está débil, el siguiente golpe lo doma en vez de dañarlo (así no lo matas sin querer).</li>
+    <li><strong>Pactar</strong>: con un aldeano delante, le pagas para que luche a tu lado (si no te alcanza, te dice qué te falta y no lo golpeas); con cualquier otro, golpea como la mano.</li>
+    <li><strong>Ejército</strong>: si apuntas a un enemigo, tu ejército lo ataca; si no, alterna entre seguirte y quedarse quieto.</li>
   </ul>
   <p>Empiezas con algo de tierra y piedras. El <strong>oro</strong> se encuentra cavando hondo, entre
     la roca, y es la moneda que más valoran los aldeanos.</p>
@@ -367,12 +414,15 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
 <section class="djc-g1-card" id="cavar-construir">
   <p class="djc-g1-label">El planeta</p>
   <h2>Cavar y construir</h2>
-  <p>El planeta se puede moldear bloque a bloque. La tierra cede en pocos golpes, la roca aguanta
-    bastante más y el oro es lo más duro de todo. Cada bloque que rompes se queda en tu
-    inventario: la tierra te da tierra, y la roca te da piedras.</p>
-  <p>Con ese material puedes construir: escalones para subir a una montaña, un muro para frenar a
-    los lobos o una torre desde la que vigilar a tu ejército. Si cavas un hoyo bajo tus pies, salta
-    para salir.</p>
+  <p>El planeta se puede moldear a tu gusto. La <strong>tierra</strong> sale a puñados, uno por golpe, y es
+    suelta: si la amontonas resbala hasta formar una ladera, y si cavas junto a un hoyo, los bordes
+    se derrumban un poco. La <strong>roca</strong> aguanta varios golpes y te da una piedra, y el
+    <strong>oro</strong> es lo más duro de todo. La base del planeta no se puede cavar.</p>
+  <p>El <strong>agua</strong> corre: si abres una zanja junto a un lago, el lago la llena; si viertes agua en un
+    hoyo, se queda en el fondo. Puedes nadar y bucear.</p>
+  <p>Para <strong>construir</strong> tienes tres materiales, y cada uno tiene su forma: cubos de pirita, prismas
+    de cuarzo y octaedros de hierro. Una construcción empieza de pie sobre el planeta y las piezas
+    del mismo material encajan con ella. Si cavas un hoyo bajo tus pies, salta para salir.</p>
 </section>
 
 <section class="djc-g1-card" id="ejercito">
@@ -381,7 +431,8 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
   <h3>Domar animales</h3>
   <p>Los <strong>lobos</strong> son rápidos y van en manada; los <strong>osos</strong> son lentos pero
     muy poderosos. Para domarlos, primero hay que <strong>debilitarlos</strong>: cuando les quede poca
-    vida (menos de un tercio), elige «Domar» y acércate. A partir de ese momento te seguirán y te
+    vida (menos de un tercio), el siguiente golpe los doma. Lo más fácil: elige «Domar» desde el
+    principio y pelea con esa herramienta. A partir de ese momento te seguirán y te
     protegerán.</p>
   <h3>Pactar con aldeanos</h3>
   <p>En las aldeas viven aldeanos con distintos oficios. Si les pagas su precio en materiales, se
@@ -451,11 +502,21 @@ se juega en el navegador, en la PC o en el celular, sin descargar nada.
     mundo empiece de nuevo, así que aprovecha cada partida.</p>
 </section>
 
-<div class="djc-play">
-  <a href="https://g1play2.djc.pe/">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-    Empezar a jugar
-  </a>
+<div class="djc-planets">
+  <p class="djc-planets-title">Elige en qué planeta jugar</p>
+  <div class="djc-play">
+    <a href="https://g1play1.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      Planeta 1
+    </a>
+    <a href="https://g1play2.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      Planeta 2
+    </a>
+  </div>
+  <p class="djc-planets-more">Cada planeta es un mundo distinto, con su propio terreno, sus jugadores
+    y su rey. Conócelos: <a href="https://g1play1.djc.pe/es/">Planeta 1</a> ·
+    <a href="https://g1play2.djc.pe/es/">Planeta 2</a></p>
 </div>
 
 </div>
