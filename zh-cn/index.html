@@ -133,6 +133,36 @@
     fill: currentColor;
   }
 
+  /*** elegir planeta ***/
+  .djc-planets {
+    margin: 20px 0 24px;
+    text-align: center;
+  }
+
+  .djc-planets .djc-play {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 10px 0;
+  }
+
+  .djc-planets-title {
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 16px;
+  }
+
+  .djc-planets-more {
+    max-width: 70ch;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 13px;
+  }
+
+  .djc-planets-more a {
+    color: var(--color-accent);
+  }
+
   /*** tarjetas (secciones de la guía) ***/
   .djc-g1-card {
     display: block;
@@ -215,11 +245,19 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
 在浏览器中即可游玩，PC 和手机都支持，无需下载。
 </p>
 
-<div class="djc-play">
-  <a href="https://g1play2.djc.pe/">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-    开始游戏
-  </a>
+<div class="djc-planets">
+  <p class="djc-planets-title">选择你要玩的星球</p>
+  <div class="djc-play">
+    <a href="https://g1play1.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      星球 1
+    </a>
+    <a href="https://g1play2.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      星球 2
+    </a>
+  </div>
+  <p class="djc-planets-more">每个星球都是一个不同的世界，有自己的地形、玩家和国王。</p>
 </div>
 
 <a class="djc-g1-card" href="#how-to-win">
@@ -260,7 +298,7 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
 
   <a href="#dig-build">
   <h2>挖掘与建造</h2>
-  <p>一块一块地改造星球，并找到金矿。</p>
+  <p>改造星球，搬运泥土和水，建造并找到金矿。</p>
   </a>
 
   <a href="#army">
@@ -295,11 +333,12 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
 <section class="djc-g1-card" id="what-is-it">
   <p class="djc-g1-label">游戏介绍</p>
   <h2>这是一款什么样的游戏？</h2>
-  <p>你会出现在一个圆形的星球上，这里有绿色的平原、可以攀登的高山，地下则布满泥土、岩石和金矿脉。
+  <p>你会出现在一个圆形的星球上，这里有绿色的平原、可以攀登的高山，地下则布满泥土、岩石和金矿脉，山谷里还有湖泊和海洋。
     这个世界里生活着成群狩猎的狼、守护领地的熊，还有村庄里的村民——只要你给的报酬够好，他们就愿意为你而战。</p>
   <p>没有队伍之分：这是一场<strong>所有人对抗所有人</strong>的较量。你的目标是组建最强大的军队，
     无论是驯服野生动物还是与村民结盟，并在其他玩家面前守住它。你可以挖掘、建造、探索、战斗和谈判：
     如何登上顶峰，由你决定。</p>
+  <p>太阳每 20 分钟绕星球转一圈：这里有<strong>白天和黑夜</strong>。在赤道上，正午的太阳很高；靠近两极时，太阳几乎升不起来，一切都停留在漫长的黄昏中。</p>
   <p>游戏界面目前为西班牙语；本指南会在括号中注明每个按钮在屏幕上显示的名称，方便你辨认。</p>
 </section>
 
@@ -308,11 +347,11 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
   <h2>如何开始游戏</h2>
   <ol>
     <li><strong>输入你的名字，然后点击“进入”（<em>Entrar</em>）。</strong>无需注册。</li>
-    <li><strong>环顾四周。</strong>你会出生在一片宁静的平原上，远处可以看到高山。</li>
+    <li><strong>环顾四周。</strong>第一次进入时，你会出现在起始区域，无论白天还是黑夜。死亡或重新进入时，你会出现在倒下或离开的地方附近，但绝不会紧挨着敌人。</li>
     <li><strong>试试你的工具</strong>：敲击地面、收集材料，然后建造点什么。</li>
     <li><strong>寻找你的第一个盟友</strong>：一只可以驯服的动物，或一个可以结盟的村庄。</li>
   </ol>
-  <p>游戏会记住你的设备：当你用同一个浏览器回来时，你还是同一个玩家，并能找回你的军队。</p>
+  <p>游戏会记住你的设备：当你用同一个浏览器回来时，你还是同一个玩家，会出现在你离开的地方，并能找回你的军队。</p>
 </section>
 
 <section class="djc-g1-card" id="controls">
@@ -320,9 +359,10 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
   <h2>在 PC 和手机上怎么玩</h2>
   <h3>PC 端</h3>
   <ul>
-    <li><strong>W A S D</strong>：移动。<strong>空格键</strong>：跳跃。<strong>鼠标</strong>：观察四周。</li>
-    <li><strong>点击</strong>：使用手中的工具（按住可连续使用）。</li>
-    <li><strong>1 到 7</strong> 或<strong>鼠标滚轮</strong>：切换工具。</li>
+    <li><strong>W A S D</strong>：移动。<strong>空格键</strong>：跳跃（在水中按住可以向上游）。<strong>鼠标</strong>：观察四周。</li>
+    <li><strong>点击</strong>：使用已选择的工具（按住可连续使用）。</li>
+    <li><strong>1 到 9</strong>：选择工具，可以同时选择多个，再按一次即取消。<strong>0</strong>：全部取消（徒手）。</li>
+    <li><strong>B</strong>：使用"建造"时切换材料。<strong>R</strong>、<strong>T</strong>、<strong>Y</strong>：旋转、倾斜和侧倾一个新建筑的第一块（按住 Shift 则反向）。</li>
     <li><strong>Q</strong>：让军队跟随你或原地待命。<strong>E</strong>：让军队攻击你瞄准的目标。</li>
     <li><strong>C</strong>：打开聊天。<strong>Esc</strong>：释放鼠标。</li>
   </ul>
@@ -330,7 +370,7 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
   <ul>
     <li>将手指放在屏幕<strong>左侧</strong>，就会出现一个用于移动的摇杆。</li>
     <li>在屏幕<strong>其他区域拖动</strong>即可观察四周。</li>
-    <li>按钮包括<strong>使用</strong>（<em>Usar</em>）、<strong>跳跃</strong>（<em>Saltar</em>）、<strong>跟随/待命</strong>（<em>Seguirme/Quedarse</em>）和<strong>攻击</strong>（<em>Atacar</em>）。</li>
+    <li>只有两个按钮：<strong>使用</strong>（<em>Usar</em>）和<strong>跳跃</strong>（<em>Saltar</em>）。要指挥军队，请选择<strong>军队</strong>工具（<em>Ejército</em>）。</li>
     <li>工具位于屏幕底部；如果放不下，可以左右滑动（箭头会提示还有更多工具）。</li>
     <li>可以<strong>竖屏或横屏</strong>游玩，怎么舒服怎么来。</li>
   </ul>
@@ -340,12 +380,16 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
   <p class="djc-g1-label">工具</p>
   <h2>你的工具</h2>
   <ul>
-    <li><strong>手</strong>（<em>Mano</em>）：攻击面前的目标，或挖掘地面。</li>
+    <li><strong>不选择任何工具</strong>：徒手（<em>Mano</em>），攻击面前的目标，或挖掘地面。</li>
+    <li><strong>工具可以组合</strong>：例如<strong>石头 + 驯服</strong>会用力攻击，等动物虚弱后再驯服它。<strong>泥土</strong>、<strong>岩石</strong>、<strong>水</strong>和<strong>建造</strong>只能选其一，<strong>投掷</strong>和<strong>军队</strong>只能单独使用。</li>
     <li><strong>石头</strong>（<em>Piedra</em>）：作用相同，但力量更大。</li>
     <li><strong>投掷</strong>（<em>Lanzar</em>）：远距离投掷石块；石块会落在地上，你可以再捡回来。</li>
-    <li><strong>泥土</strong>（<em>Tierra</em>）和<strong>岩石</strong>（<em>Roca</em>）：放置方块，搭建墙壁、阶梯或庇护所。</li>
-    <li><strong>驯服</strong>（<em>Domar</em>）：把一只虚弱的动物变成你军队的一员。</li>
-    <li><strong>结盟</strong>（<em>Pactar</em>）：付钱让村民站在你这边作战。</li>
+    <li><strong>泥土</strong>（<em>Tierra</em>）：在你瞄准的地方撒一把泥土；在同一处撒多了会堆成土堆。<strong>岩石</strong>（<em>Roca</em>）：放一块岩石（消耗一块石头）。如果有人就在你面前，你会像徒手一样攻击他。</li>
+    <li><strong>水</strong>（<em>Agua</em>）：一个水桶。瞄准水面可以舀一把水；瞄准地面则把水倒出来，水会顺坡流下。</li>
+    <li><strong>建造</strong>（<em>Construir</em>）：放置<strong>黄铁矿</strong>（立方体）、<strong>石英</strong>（六棱柱）或<strong>铁</strong>（八面体）的构件。放置前可以看到它的位置；同一种材料的构件会互相拼接。</li>
+    <li><strong>驯服</strong>（<em>Domar</em>）：像徒手一样攻击；当动物已经虚弱时，下一击会驯服它而不是伤害它（这样就不会误杀它）。</li>
+    <li><strong>结盟</strong>（<em>Pactar</em>）：面对村民时，付钱让他站在你这边作战（钱不够时会提示你还缺什么，并且不会攻击他）；面对其他目标时，像徒手一样攻击。</li>
+    <li><strong>军队</strong>（<em>Ejército</em>）：瞄准敌人时，你的军队会攻击它；否则在跟随你和原地待命之间切换。</li>
   </ul>
   <p>开局时你会有一些泥土和石头。<strong>黄金</strong>要往深处挖，在岩石之间才能找到，
     它是村民最看重的货币。</p>
@@ -364,10 +408,12 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
 <section class="djc-g1-card" id="dig-build">
   <p class="djc-g1-label">星球</p>
   <h2>挖掘与建造</h2>
-  <p>这个星球可以一块一块地改造。泥土敲几下就会松动，岩石要耐打得多，而黄金是最坚硬的。
-    你打碎的每一个方块都会进入你的背包：泥土给你泥土，岩石给你石头。</p>
-  <p>用这些材料你可以建造：登山用的台阶、挡住狼群的城墙，或是一座用来守望军队的高塔。
-    如果你在脚下挖了个坑，跳一下就能出来。</p>
+  <p>这个星球可以随你改造。<strong>泥土</strong>每敲一下就挖出一把，而且是松散的：堆起来会滑成斜坡，
+    在坑边挖土时坑沿也会塌下一些。<strong>岩石</strong>要敲好几下，会给你一块石头，而<strong>黄金</strong>是最坚硬的。
+    星球的基岩无法挖掘。</p>
+  <p><strong>水</strong>会流动：在湖边挖一条沟，湖水就会灌进来；把水倒进坑里，水会留在坑底。你可以游泳和潜水。</p>
+  <p><strong>建造</strong>有三种材料，每种都有自己的形状：黄铁矿立方体、石英六棱柱和铁八面体。
+    一座建筑会竖直地立在星球上，同一种材料的构件会拼接在一起。如果你在脚下挖了个坑，跳一下就能出来。</p>
 </section>
 
 <section class="djc-g1-card" id="army">
@@ -376,7 +422,7 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
   <h3>驯服动物</h3>
   <p><strong>狼</strong>速度快，成群行动；<strong>熊</strong>行动缓慢，但非常强大。
     要驯服它们，首先得<strong>削弱它们</strong>：当它们的生命所剩不多（不到三分之一）时，
-    选择“驯服”（<em>Domar</em>）并靠近它们。从那一刻起，它们就会跟随并保护你。</p>
+    下一击就会驯服它们。最简单的方法：一开始就选择“驯服”（<em>Domar</em>）用它战斗。从那一刻起，它们就会跟随并保护你。</p>
   <h3>与村民结盟</h3>
   <p>村庄里住着从事不同职业的村民。只要用材料支付他们的价码，他们就会加入你：</p>
   <ul>
@@ -439,11 +485,19 @@ role="tabpanel" aria-labelledby="tab-3" lang="zh-CN">
     所以请珍惜每一局游戏。</p>
 </section>
 
-<div class="djc-play">
-  <a href="https://g1play2.djc.pe/">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-    立即开始游戏
-  </a>
+<div class="djc-planets">
+  <p class="djc-planets-title">选择你要玩的星球</p>
+  <div class="djc-play">
+    <a href="https://g1play1.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      星球 1
+    </a>
+    <a href="https://g1play2.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      星球 2
+    </a>
+  </div>
+  <p class="djc-planets-more">每个星球都是一个不同的世界，有自己的地形、玩家和国王。</p>
 </div>
 
 </div>

@@ -133,6 +133,36 @@
     fill: currentColor;
   }
 
+  /*** elegir planeta ***/
+  .djc-planets {
+    margin: 20px 0 24px;
+    text-align: center;
+  }
+
+  .djc-planets .djc-play {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 10px 0;
+  }
+
+  .djc-planets-title {
+    margin: 0;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 16px;
+  }
+
+  .djc-planets-more {
+    max-width: 70ch;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 13px;
+  }
+
+  .djc-planets-more a {
+    color: var(--color-accent);
+  }
+
   /*** tarjetas (secciones de la guía) ***/
   .djc-g1-card {
     display: block;
@@ -215,11 +245,19 @@ One whole planet, many players and a single crown. DJC G1 is a 3D multiplayer ga
 in your browser, on PC or on your phone, with nothing to download.
 </p>
 
-<div class="djc-play">
-  <a href="https://g1play2.djc.pe/">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-    Play
-  </a>
+<div class="djc-planets">
+  <p class="djc-planets-title">Choose the planet you want to play on</p>
+  <div class="djc-play">
+    <a href="https://g1play1.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      Planet 1
+    </a>
+    <a href="https://g1play2.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      Planet 2
+    </a>
+  </div>
+  <p class="djc-planets-more">Each planet is a different world, with its own terrain, players and king.</p>
 </div>
 
 <a class="djc-g1-card" href="#how-to-win">
@@ -260,7 +298,7 @@ in your browser, on PC or on your phone, with nothing to download.
 
   <a href="#dig-build">
   <h2>Digging and building</h2>
-  <p>Shape the planet block by block and find gold.</p>
+  <p>Shape the planet, move dirt and water, build and find gold.</p>
   </a>
 
   <a href="#army">
@@ -296,12 +334,14 @@ in your browser, on PC or on your phone, with nothing to download.
   <p class="djc-g1-label">The game</p>
   <h2>What is the game about?</h2>
   <p>You appear on a round planet with green plains, mountains you can climb and an underground
-    full of dirt, rock and veins of gold. The world is home to wolves that hunt in packs, bears
+    full of dirt, rock and veins of gold; the valleys hold lakes and seas. The world is home to wolves that hunt in packs, bears
     that defend their territory and villages with villagers ready to fight… if you pay them well.</p>
   <p>There are no teams: it's <strong>everyone against everyone</strong>. Your goal is to gather the
     most powerful army, whether by taming wild animals or striking deals with villagers, and hold
     on to it against the other players. You can dig, build, explore, fight and negotiate: you
     decide how to reach the top.</p>
+  <p>The sun goes around the planet every 20 minutes: there's <strong>day and night</strong>. At the
+    equator the sun is high at noon; near the poles it barely rises and everything stays in a long sunset.</p>
   <p>The game's interface is in Spanish; in this guide each button's on-screen name appears in
     parentheses so you can recognize it.</p>
 </section>
@@ -311,12 +351,12 @@ in your browser, on PC or on your phone, with nothing to download.
   <h2>How to start playing</h2>
   <ol>
     <li><strong>Type your name and press <em>Entrar</em> (Enter).</strong> No sign-up needed.</li>
-    <li><strong>Look around.</strong> You start on a quiet plain, with mountains in sight.</li>
+    <li><strong>Look around.</strong> The first time, you appear in the starting area, day or night. When you die or come back, you appear near where you fell or left, but never next to an enemy.</li>
     <li><strong>Try your tools</strong>: hit the ground, collect material and build something.</li>
     <li><strong>Find your first ally</strong>: an animal to tame or a village to strike a deal with.</li>
   </ol>
   <p>The game remembers your device: when you come back from the same browser, you'll be the same
-    player and get your army back.</p>
+    player, appear where you left off and get your army back.</p>
 </section>
 
 <section class="djc-g1-card" id="controls">
@@ -324,9 +364,10 @@ in your browser, on PC or on your phone, with nothing to download.
   <h2>How to play on PC and mobile</h2>
   <h3>On PC</h3>
   <ul>
-    <li><strong>W A S D</strong>: walk. <strong>Space</strong>: jump. <strong>Mouse</strong>: look around.</li>
-    <li><strong>Click</strong>: use the tool in your hand (hold to repeat).</li>
-    <li><strong>1 to 7</strong> or the <strong>mouse wheel</strong>: switch tools.</li>
+    <li><strong>W A S D</strong>: walk. <strong>Space</strong>: jump (in water, hold it to swim up). <strong>Mouse</strong>: look around.</li>
+    <li><strong>Click</strong>: use what you have selected (hold to repeat).</li>
+    <li><strong>1 to 9</strong>: select tools; they add up, and pressing again removes them. <strong>0</strong>: none (your hand).</li>
+    <li><strong>B</strong>: with Build, change material. <strong>R</strong>, <strong>T</strong> and <strong>Y</strong>: turn, tilt and lean the first piece of a construction (with Shift, the other way).</li>
     <li><strong>Q</strong>: your army follows you or stays put. <strong>E</strong>: your army attacks what you're aiming at.</li>
     <li><strong>C</strong>: open the chat. <strong>Esc</strong>: release the mouse.</li>
   </ul>
@@ -334,7 +375,7 @@ in your browser, on PC or on your phone, with nothing to download.
   <ul>
     <li>Put your finger on the <strong>left side</strong> of the screen and a joystick will appear for walking.</li>
     <li><strong>Drag anywhere else</strong> on the screen to look around.</li>
-    <li>Buttons <strong>Use</strong> (<em>Usar</em>), <strong>Jump</strong> (<em>Saltar</em>), <strong>Follow me/Stay</strong> (<em>Seguirme/Quedarse</em>) and <strong>Attack</strong> (<em>Atacar</em>).</li>
+    <li>Two buttons: <strong>Use</strong> (<em>Usar</em>) and <strong>Jump</strong> (<em>Saltar</em>). To give orders to your army, pick the <strong>Army</strong> tool (<em>Ejército</em>).</li>
     <li>The tools are at the bottom; if they don't fit, swipe them sideways (the arrows let you know there are more).</li>
     <li>You can play in <strong>portrait or landscape</strong>, whichever feels more comfortable.</li>
   </ul>
@@ -344,12 +385,16 @@ in your browser, on PC or on your phone, with nothing to download.
   <p class="djc-g1-label">Tools</p>
   <h2>Your tools</h2>
   <ul>
-    <li><strong>Hand</strong> (<em>Mano</em>): hit whoever is in front of you or dig the ground.</li>
+    <li><strong>Nothing selected</strong>: your hand (<em>Mano</em>); hit whoever is in front of you or dig the ground.</li>
+    <li><strong>You can combine them</strong>: for example <strong>Stone + Tame</strong> hits hard until the animal is weak and then tames it. <strong>Dirt</strong>, <strong>Rock</strong>, <strong>Water</strong> and <strong>Build</strong>: only one of them; <strong>Throw</strong> and <strong>Army</strong> go alone.</li>
     <li><strong>Stone</strong> (<em>Piedra</em>): the same, but with more strength.</li>
     <li><strong>Throw</strong> (<em>Lanzar</em>): throw stones at a distance; they fall to the ground and you can pick them up again.</li>
-    <li><strong>Dirt</strong> (<em>Tierra</em>) and <strong>Rock</strong> (<em>Roca</em>): place blocks to raise walls, stairs or shelters.</li>
-    <li><strong>Tame</strong> (<em>Domar</em>): turn a weakened animal into part of your army.</li>
-    <li><strong>Deal</strong> (<em>Pactar</em>): pay a villager to fight by your side.</li>
+    <li><strong>Dirt</strong> (<em>Tierra</em>): drop a handful of dirt where you aim; pour a lot in the same spot and it piles up. <strong>Rock</strong> (<em>Roca</em>): place a rock (it uses a stone). If someone is right in front of you, you hit them as with your hand.</li>
+    <li><strong>Water</strong> (<em>Agua</em>): a bucket. Aim at water to scoop a handful; aim at the ground to pour it, and it runs downhill.</li>
+    <li><strong>Build</strong> (<em>Construir</em>): place pieces of <strong>pyrite</strong> (cubes), <strong>quartz</strong> (prisms) or <strong>iron</strong> (octahedra). Before placing one you see where it will go; pieces of the same material fit together.</li>
+    <li><strong>Tame</strong> (<em>Domar</em>): hits like your hand and, once the animal is weak, your next hit tames it instead of hurting it (so you never kill it by accident).</li>
+    <li><strong>Deal</strong> (<em>Pactar</em>): with a villager in front of you, you pay them to fight by your side (if you can't afford it, it tells you what you're missing and doesn't hit them); with anyone else, it hits like your hand.</li>
+    <li><strong>Army</strong> (<em>Ejército</em>): if you aim at an enemy, your army attacks it; if not, it switches between following you and staying put.</li>
   </ul>
   <p>You start with some dirt and stones. <strong>Gold</strong> is found by digging deep, among the
     rock, and it's the currency villagers value most.</p>
@@ -369,11 +414,15 @@ in your browser, on PC or on your phone, with nothing to download.
 <section class="djc-g1-card" id="dig-build">
   <p class="djc-g1-label">The planet</p>
   <h2>Digging and building</h2>
-  <p>The planet can be shaped block by block. Dirt gives way in a few hits, rock holds out much
-    longer and gold is the hardest of all. Every block you break goes into your inventory: dirt
-    gives you dirt, and rock gives you stones.</p>
-  <p>With that material you can build: steps to climb a mountain, a wall to hold off the wolves or
-    a tower from which to watch over your army. If you dig a hole under your feet, jump to get out.</p>
+  <p>You can shape the planet as you like. <strong>Dirt</strong> comes out in handfuls, one per hit, and it's
+    loose: pile it up and it slides into a slope, and if you dig next to a hole its edges crumble a
+    little. <strong>Rock</strong> takes several hits and gives you a stone, and <strong>gold</strong> is the
+    hardest of all. The planet's bedrock can't be dug.</p>
+  <p><strong>Water</strong> flows: open a trench next to a lake and the lake fills it; pour water into a hole and
+    it stays at the bottom. You can swim and dive.</p>
+  <p>To <strong>build</strong> you have three materials, each with its own shape: pyrite cubes, quartz prisms and
+    iron octahedra. A construction starts upright on the planet, and pieces of the same material fit
+    onto it. If you dig a hole under your feet, jump to get out.</p>
 </section>
 
 <section class="djc-g1-card" id="army">
@@ -382,7 +431,8 @@ in your browser, on PC or on your phone, with nothing to download.
   <h3>Taming animals</h3>
   <p><strong>Wolves</strong> are fast and travel in packs; <strong>bears</strong> are slow but very
     powerful. To tame them, you first have to <strong>weaken them</strong>: when they have little
-    health left (less than a third), choose <em>Domar</em> (Tame) and get close. From then on they'll
+    health left (less than a third), your next hit tames them. The easiest way: pick <em>Domar</em> (Tame)
+    from the start and fight with it. From then on they'll
     follow and protect you.</p>
   <h3>Striking deals with villagers</h3>
   <p>Villages are home to villagers with different trades. If you pay their price in materials,
@@ -452,11 +502,19 @@ in your browser, on PC or on your phone, with nothing to download.
     restart the world, so make the most of every match.</p>
 </section>
 
-<div class="djc-play">
-  <a href="https://g1play2.djc.pe/">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-    Start playing
-  </a>
+<div class="djc-planets">
+  <p class="djc-planets-title">Choose the planet you want to play on</p>
+  <div class="djc-play">
+    <a href="https://g1play1.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      Planet 1
+    </a>
+    <a href="https://g1play2.djc.pe/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      Planet 2
+    </a>
+  </div>
+  <p class="djc-planets-more">Each planet is a different world, with its own terrain, players and king.</p>
 </div>
 
 </div>
